@@ -1,9 +1,17 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
+import Skills from '../src/components/Skills/Skills';
+import Projects from '../src/components/Projects/Projects';
+import Header from '../src/components/Header/Header';
 
-const Title = styled.h1`
-  color: red;
-  font-size: 50px;
-`
+const index = () => {
+	return (
+		<>
+			<Header />
+			<Skills />
+			<Projects />
+		</>
+	);
+};
 
-export default () => <Title>My page</Title>
+export default index;
