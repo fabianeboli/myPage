@@ -1,6 +1,7 @@
 import React from 'react';
 import Skill, { ISkill } from './Skill/Skill';
 import uuid from 'uuid/v4';
+import * as S from './Skills.style';
 
 const skillsList: ISkill[] = [
 	{
@@ -77,7 +78,16 @@ const presentSkills = () =>
 	skillsList.map(skill => <Skill key={uuid()} name={skill.name} image={skill.image} />);
 
 const Skills = () => {
-	return <div>{presentSkills()}</div>;
+	const skillsList: JSX.Element[] = presentSkills();
+	const firstHalf = skillsList.slice(0, skillsList.length / 2);
+	const secondHalf = skillsList.slice(skillsList.length / 2, skillsList.length);
+	return (
+		<S.container>
+			<legend>Skills</legend>
+			<div>{firstHalf}</div>
+			<div>{secondHalf}</div>
+		</S.container>
+	);
 };
 
 export default Skills;

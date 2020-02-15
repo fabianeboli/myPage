@@ -1,17 +1,19 @@
 import React from 'react';
 import Project, { IProject } from './Project/Project';
 import uuid from 'uuid/v4';
+import * as S from './Projects.style';
+
 const ProjectsList: IProject[] = [
 	{
 		name: 'Game Of life',
 		image: require('../../images/Projects/GamesOfLife.png'),
-		description: '',
+		description: 'An implementaion of Game of life',
 		url: 'https://codesandbox.io/s/game-of-life-0wy3o',
 	},
 	{
 		name: 'Lights Out',
 		image: require('../../images/Projects/LightsOut.png'),
-		description: '',
+		description: 'An implementaion of classic lightsOut Game',
 		url: 'https://codesandbox.io/s/lights-out-mvb9f',
 	},
 	{
@@ -74,7 +76,7 @@ const presentProjects = () =>
 	));
 
 const Projects = () => {
-	return <>{presentProjects()}</>;
+	return <S.projectList>{presentProjects()}</S.projectList>;
 };
 
 export default Projects;
