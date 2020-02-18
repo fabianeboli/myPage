@@ -4,90 +4,92 @@ import uuid from 'uuid/v4';
 import * as S from './Skills.style';
 
 const skillsList: ISkill[] = [
-	{
-		name: 'HTML5',
-		image: require('../../images/Skills/html-5-logo-svg-vector.svg'),
-	},
-	{
-		name: 'CSS3',
-		image: require('../../images/Skills/css-3-logo-svg-vector.svg'),
-	},
-	{
-		name: 'Javascript',
-		image: require('../../images/Skills/javascript-logo-svg-vector.svg'),
-	},
-	{
-		name: 'Typescript',
-		image: require('../../images/Skills/typescript-seeklogo.com.svg'),
-	},
-	{
-		name: 'React',
-		image: require('../../images/Skills/react-1-logo-svg-vector.svg'),
-	},
-	{
-		name: 'Jest',
-		image: require('../../images/Skills/jest-logo-svg-vector.svg'),
-	},
-	{
-		name: 'Sass',
-		image: require('../../images/Skills/sass-1-logo-svg-vector.svg'),
-	},
-	{
-		name: 'Styled-components',
-		image: require('../../images/Skills/styled-components.png'),
-	},
-	{
-		name: 'Node',
-		image: require('../../images/Skills/nodejs-seeklogo.com.svg'),
-	},
-	{
-		name: 'Express',
-		image: require('../../images/Skills/express-js-seeklogo.com.svg'),
-	},
-	{
-		name: 'MongoDB',
-		image: require('../../images/Skills/mongodb-logo-svg-vector.svg'),
-	},
-	{
-		name: 'PostgreSQL',
-		image: require('../../images/Skills/PostgreSQL_logo.3colors.svg'),
-	},
-	{
-		name: 'SQL Server',
-		image: require('../../images/Skills/microsoft-sql-server-logo-svg-vector.svg'),
-	},
-	{
-		name: 'Python',
-		image: require('../../images/Skills/python-5-logo-svg-vector.svg'),
-	},
-	{
-		name: 'Java',
-		image: require('../../images/Skills/java-4-logo-svg-vector.svg'),
-	},
-	{
-		name: 'Kotlin',
-		image: require('../../images/Skills/kotlin-1-logo-svg-vector.svg'),
-	},
-	{
-		name: 'C#',
-		image: require('../../images/Skills/external-content.duckduckgo.com.png'),
-	},
+    {
+        name: 'HTML5',
+        image: require('../../images/Skills/html-5-logo-svg-vector.svg'),
+    },
+    {
+        name: 'CSS3',
+        image: require('../../images/Skills/css-3-logo-svg-vector.svg'),
+    },
+    {
+        name: 'Javascript',
+        image: require('../../images/Skills/javascript-logo-svg-vector.svg'),
+    },
+    {
+        name: 'Typescript',
+        image: require('../../images/Skills/typescript-seeklogo.com.svg'),
+    },
+    {
+        name: 'React',
+        image: require('../../images/Skills/react-1-logo-svg-vector.svg'),
+    },
+    {
+        name: 'Jest',
+        image: require('../../images/Skills/jest-logo-svg-vector.svg'),
+    },
+    {
+        name: 'Sass',
+        image: require('../../images/Skills/sass-1-logo-svg-vector.svg'),
+    },
+    {
+        name: 'Styled-components',
+        image: require('../../images/Skills/styled-components.png'),
+    },
+    {
+        name: 'Node',
+        image: require('../../images/Skills/nodejs-seeklogo.com.svg'),
+    },
+    {
+        name: 'Express',
+        image: require('../../images/Skills/express-js-seeklogo.com.svg'),
+    },
+    {
+        name: 'MongoDB',
+        image: require('../../images/Skills/mongodb-logo-svg-vector.svg'),
+    },
+    {
+        name: 'PostgreSQL',
+        image: require('../../images/Skills/PostgreSQL_logo.3colors.svg'),
+    },
+    {
+        name: 'SQL Server',
+        image: require('../../images/Skills/microsoft-sql-server-logo-svg-vector.svg'),
+    },
+    {
+        name: 'Python',
+        image: require('../../images/Skills/python-5-logo-svg-vector.svg'),
+    },
+    {
+        name: 'Java',
+        image: require('../../images/Skills/java-4-logo-svg-vector.svg'),
+    },
+    {
+        name: 'Kotlin',
+        image: require('../../images/Skills/kotlin-1-logo-svg-vector.svg'),
+    },
+    {
+        name: 'C#',
+        image: require('../../images/Skills/external-content.duckduckgo.com.png'),
+    },
 ];
 
-const presentSkills = () =>
-	skillsList.map(skill => <Skill key={uuid()} name={skill.name} image={skill.image} />);
+const presentSkills = (): JSX.Element[] =>
+    skillsList.map(skill => <Skill key={uuid()} name={skill.name} image={skill.image} />);
 
-const Skills = () => {
-	const skillsList: JSX.Element[] = presentSkills();
-	const firstHalf = skillsList.slice(0, skillsList.length / 2);
-	const secondHalf = skillsList.slice(skillsList.length / 2, skillsList.length);
-	return (
-		<S.container>
-			<legend>Skills</legend>
-			<div>{firstHalf}</div>
-			<div>{secondHalf}</div>
-		</S.container>
-	);
+const Skills: React.FC = () => {
+    const skillsList: JSX.Element[] = presentSkills();
+    const firstHalf: JSX.Element[] = skillsList.slice(0, skillsList.length / 2);
+    const secondHalf: JSX.Element[] = skillsList.slice(skillsList.length / 2, skillsList.length);
+    return (
+        <S.container>
+            <legend>Skills</legend>
+            <div>{firstHalf}</div>
+            <div>{secondHalf}</div>
+            {/* <legend>Skills</legend>
+            {skillsList} */}
+        </S.container>
+    );
 };
 
 export default Skills;

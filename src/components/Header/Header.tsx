@@ -8,7 +8,8 @@ const Header = () => {
 			<S.showcaseContainer>
 				<S.nameContainer>
 					<S.name>Fabian Eboli </S.name>
-					<Animation/> from tricity
+					{/* <Animation/> */}
+					<S.title><span>Web Developer</span> from tricity</S.title>
 				</S.nameContainer>
 				<S.mail>
 					<S.link href="mailto:fabianeboli@tutanota.com">fabianeboli@tutanota.com</S.link>

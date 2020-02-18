@@ -14,8 +14,8 @@ const Project = (props: IProject) => {
             <S.container>
                 <S.title>{props.name}</S.title>
                 <S.projectDetails>
+                    <S.image image={props.image} />
                     <S.description>{props.description}</S.description>
-                    <S.img src={props.image} />
                 </S.projectDetails>
                 <S.link href={props.url}>
                     <button>Go to Live version</button>

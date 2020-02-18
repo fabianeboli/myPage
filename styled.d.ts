@@ -8,7 +8,9 @@ declare module 'styled-components' {
         paragraph: string,
         button: string,
         buttonText: string,
-        shadow: string
+        shadow: string,
+        gradient: string,
+        gradientButton: string,
 
     }
 }

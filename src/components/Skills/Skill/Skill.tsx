@@ -1,18 +1,18 @@
-import React from "react";
+import React from 'react';
 import * as S from './Skill.style';
 
 export interface ISkill {
-  name: string;
-  image: string;
+    name: string;
+    image: string;
 }
 
 const Skill = (props: ISkill) => {
-  return (
-    <>
-      <S.img src={props.image} />
-      {/* <p>{props.name}</p> */}
-    </>
-  );
+    return (
+        <S.container>
+            <S.popup>{props.name}</S.popup>
+            <S.skillLogo src={props.image} />
+        </S.container>
+    );
 };
 
 export default Skill;

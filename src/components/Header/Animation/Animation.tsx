@@ -2,17 +2,21 @@ import React from 'react';
 import * as S from './Animation.style';
 
 const Animation: React.FC = () => {
-    
     return (
-        <>
-            <S.svg viewBox="0 0 700 225">
+        <S.wrapper>
+            <S.svg
+                 viewBox="0 0 285 80"
+                width="100%"
+                height="100%"
+                preserveAspectRatio="xMinYMin meet"
+                xmlSpace="preserve">
                 <S.filledHeading id="textClip">
-                    <text y="1em">Web developer</text>
+                    <text y="70">Web developer</text>
                     {/* <text y="140">Creators</text>
                     <text y="210">+Innovators</text> */}
                 </S.filledHeading>
 
-                <g id='background' clip-path="url(#textClip)">
+                <g id="background" clip-path="url(#textClip)">
                     <S.path
                         d="m445.62-26.657c-19.58 20.137-3.6309 59.698 27.377 73.932 31.007 14.234 67.049-14.123 72.974-27.02 5.9253-12.875-13.142-59.988-24.058-65.022-10.937-5.012-42.19-16.996-76.294 18.11z"
                         stroke-width=".22275"
@@ -235,7 +239,7 @@ const Animation: React.FC = () => {
                     />
                 </g>
             </S.svg>
-        </>
+        </S.wrapper>
     );
 };
 
