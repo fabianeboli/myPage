@@ -3,31 +3,42 @@ import React from 'react';
 import Projects from '../src/components/Projects/Projects';
 import Header from '../src/components/Header/Header';
 import Overlay from '../src/components/Overlay/Overlay';
-import { GlobalStyle, theme } from '../src/components/Theme.style';
+import { GlobalStyle, particles as Particles } from '../src/components/Theme.style';
 import { ThemeProvider } from 'styled-components';
+import ThemeSwtich from '../src/components/ThemeSwitch/ThemeSwtich';
+import { ThemeContext } from '../src/contexts/ThemeContext';
 const index = () => {
+	const {theme, changeTheme, isDark} = React.useContext(ThemeContext)
     return (
         <>
-            {/* <Particles
+            <ThemeProvider theme={theme}>
+                <>
+                    <GlobalStyle />
+            {isDark && <Particles
 				params={{
 					particles: {
 						number: {
-							value: 60,
+							value: 30,
 							density: {
 								enable: true,
 								value_area: 1500,
 							},
 						},
+						
 						line_linked: {
 							enable: true,
 							opacity: 0.02,
+						},
+						color: {
+							value: "#ff0"
 						},
 						move: {
 							direction: 'right',
 							speed: 0.05,
 						},
 						size: {
-							value: 1,
+							value: 3,
+							random: true,
 						},
 						opacity: {
 							anim: {
@@ -43,6 +54,10 @@ const index = () => {
 								enable: true,
 								mode: 'push',
 							},
+							onhover: {
+								enable: true,
+								mode: 'repulse',
+							}
 						},
 						modes: {
 							push: {
@@ -52,10 +67,8 @@ const index = () => {
 					},
 					retina_detect: true,
 				}}
-			/>{' '} */}
-            <ThemeProvider theme={theme}>
-                <>
-                    <GlobalStyle />
+			/>}
+						<ThemeSwtich/>
                     <Overlay>
                         <Header />
                         <Projects />

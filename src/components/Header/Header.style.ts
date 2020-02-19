@@ -46,7 +46,7 @@ export const link = styled.a`
     font-family: 'Lato', sans-serif;
     color: ${p => p.theme.headline};
     text-decoration: none;
-
+    transition: 0.1s linear;
     &:hover {
         text-decoration: underline;
         color: ${p => p.theme.button};

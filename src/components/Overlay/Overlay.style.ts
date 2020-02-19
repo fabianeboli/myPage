@@ -8,4 +8,5 @@ export const container = styled.div`
     border-radius: 6px;
     border: 3px solid ${p => p.theme.headline};
     box-shadow: 0px 0px 5px ${p => p.theme.headline};
+    position: sticky;
 `
