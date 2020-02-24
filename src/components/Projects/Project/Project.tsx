@@ -18,7 +18,7 @@ const Project = (props: IProject) => {
                     <S.description>{props.description}</S.description>
                 </S.projectDetails>
                 <S.link href={props.url}>
-                    <button>Go to Live version</button>
+                    <button>Live version</button>
                 </S.link>
             </S.container>
         </>

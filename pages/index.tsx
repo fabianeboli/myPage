@@ -18,15 +18,14 @@ const index = () => {
 				params={{
 					particles: {
 						number: {
-							value: 30,
+							value: 100,
 							density: {
 								enable: true,
 								value_area: 1500,
 							},
 						},
-						
 						line_linked: {
-							enable: true,
+							enable: false,
 							opacity: 0.02,
 						},
 						color: {

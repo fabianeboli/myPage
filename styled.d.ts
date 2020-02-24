@@ -11,6 +11,7 @@ declare module 'styled-components' {
         shadow: string,
         gradient: string,
         gradientButton: string,
-
+        overlayGradientBackground: string,
+        nonMobilePx: string;
     }
 }

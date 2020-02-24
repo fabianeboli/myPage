@@ -9,11 +9,10 @@ export const container = styled.div`
 `;
 
 export const skillLogo = styled.img`
-    font-size: calc(0.7em + 0.5vw);
-    max-width: calc(2.5em + 1.5vw);
-    max-height: calc(2.5em + 1.5vw);
-    width: 100%;
-    margin: calc(0.3em + 0.5vw);
+    max-width: calc(2.5em + 3.5vw);
+    max-height: calc(2.5em + 3.5vh);
+    /* width: 100%; */
+    /* margin: calc(0.1em + 0.2vw); */
 `;
 
 export const popup = styled.p`
@@ -27,6 +26,7 @@ export const popup = styled.p`
     top: 1px;
     transition: 0.15s ease;
     opacity: 0;
+    margin: 0;
 
    ${container}:hover & {
     opacity: 1;

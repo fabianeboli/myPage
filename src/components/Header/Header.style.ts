@@ -1,11 +1,21 @@
+import { theme } from './../Theme.style';
 import styled from 'styled-components';
+import { Github } from 'styled-icons/fa-brands/Github'
 
 export const container = styled.div`
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-direction: column;
     color: ${p => p.theme.headline};
     text-shadow: 2px 2px 1px ${p => p.theme.shadow};
+    height: 90vh;
+    margin: 0 5%;
+    width: 100%;
+
+    @media only screen and (min-width: ${p => p.theme.nonMobilePx}) {
+        flex-direction: row;
+    }
 `;
 
 export const showcaseContainer = styled.div`
@@ -37,16 +47,23 @@ export const title = styled.h3`
     }
 `;
 
-export const mail = styled.h4`
+export const contact = styled.h4`
     font-family: 'Lato', sans-serif;
     margin: 2% auto;
+    display: flex;
+    
 `;
+
+export const github = styled(Github)`
+
+`
 
 export const link = styled.a`
     font-family: 'Lato', sans-serif;
     color: ${p => p.theme.headline};
     text-decoration: none;
     transition: 0.1s linear;
+    padding: 0 5px;
     &:hover {
         text-decoration: underline;
         color: ${p => p.theme.button};

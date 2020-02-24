@@ -83,11 +83,11 @@ const Skills: React.FC = () => {
     const secondHalf: JSX.Element[] = skillsList.slice(skillsList.length / 2, skillsList.length);
     return (
         <S.container>
-            <legend>Skills</legend>
+            {/* <legend>Skills</legend> 
             <div>{firstHalf}</div>
-            <div>{secondHalf}</div>
-            {/* <legend>Skills</legend>
-            {skillsList} */}
+            <div>{secondHalf}</div> */}
+            <legend>Skills</legend>
+                {skillsList}
         </S.container>
     );
 };

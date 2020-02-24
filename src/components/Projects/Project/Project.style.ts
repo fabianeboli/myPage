@@ -43,12 +43,13 @@ export const container = styled.div`
 
 export const image = styled.div<{ image: string }>`
     background-image: url(${p => p.image});
-    font-size: calc(1em + 0.7vw);
-    height: 12vh;
+    font-size: calc(5em + 0.7vw);
+    height: 15vh;
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    margin: 15px 0;
 `;
 
 export const description = styled.p`
