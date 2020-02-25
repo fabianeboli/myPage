@@ -9,9 +9,10 @@ export const container = styled.div`
     flex-direction: column;
     color: ${p => p.theme.headline};
     text-shadow: 2px 2px 1px ${p => p.theme.shadow};
-    height: 90vh;
+    height: 80vh;
     margin: 0 5%;
     width: 100%;
+   
 
     @media only screen and (min-width: ${p => p.theme.nonMobilePx}) {
         flex-direction: row;
@@ -24,6 +25,8 @@ export const showcaseContainer = styled.div`
     /* margin: 15% auto; */
     /* max-width: 25vw; */
     font-size: calc(1.2em + 1.1vw);
+    position: relative;
+    bottom: 9%;
 `;
 
 export const nameContainer = styled.div`

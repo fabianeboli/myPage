@@ -20,9 +20,8 @@ const hangAnimation = keyframes`
 
 export const ArrowIcon = styled(ArrowDropDownCircle)`
     color: ${p => p.theme.button};
-    position: absolute;
-    top: 85vh;
-    right: 55vw;
+    position: relative;
+    top: 30vh;
     opacity: 0.7;
     transition: opacity 0.7s;
 

@@ -1,4 +1,4 @@
-import React from 'react';
+import React,  { useContext } from 'react';
 
 import Projects from '../src/components/Projects/Projects';
 import Header from '../src/components/Header/Header';
@@ -7,8 +7,9 @@ import { GlobalStyle, particles as Particles } from '../src/components/Theme.sty
 import { ThemeProvider } from 'styled-components';
 import ThemeSwtich from '../src/components/ThemeSwitch/ThemeSwtich';
 import { ThemeContext } from '../src/contexts/ThemeContext';
+
 const index = () => {
-	const {theme, changeTheme, isDark} = React.useContext(ThemeContext)
+	const {theme, isDark} = useContext(ThemeContext)
     return (
         <>
             <ThemeProvider theme={theme}>
@@ -36,7 +37,7 @@ const index = () => {
 							speed: 0.05,
 						},
 						size: {
-							value: 3,
+							value: 1,
 							random: true,
 						},
 						opacity: {

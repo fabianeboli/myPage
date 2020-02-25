@@ -9,6 +9,7 @@ const lightBulb = `
     cursor: pointer;
     padding: 10px;
     border-radius: 40px;
+    border: none;
     float: right;
     position: relative;
     bottom: 2vh;
@@ -24,8 +25,9 @@ export const lightBulbOff = styled(faLightBulbOff)`
 export const lightBulbOn = styled(faLightBulbOn)`
     ${lightBulb};
     background-color: ${p => p.theme.background};
-    color: ${p => p.theme.button};
+    color: ${p => p.theme.button + '32'};
     text-shadow: 1px 1px 100px red;
+    background-image: radial-gradient(rgba(255,216,3,0.8),rgba(255,216,3,0.1) );
     box-shadow: 0px 0px 10px rgba(255,216,3,0.9),
     0px 0px 80px 10px rgba(255,216,3,0.85),
     0px 0px 35px rgba(255,216,3,0.55) inset;

@@ -39,22 +39,21 @@ const ProjectsList: IProject[] = [
         name: 'Dice Poker',
         image: require('../../images/Projects/DicePoker.png'),
         description: `A dice poker game. 
-        The game consists of two rounds. In the first round, player rolls the dice. 
-        After rolling the dice, the score is calculated, in which player 
-        may roll the selected dices once again. After the second round, 
-        the final score is calculated and a point is given to the player that has won the game`,
+        The game consists of two rounds. After the second round, 
+        the final score is calculated and a point is given to the player that 
+        has won the game.`,
         url: 'https://codesandbox.io/s/dice-poker-2wks7',
     },
     {
         name: 'Hangman',
         image: require('../../images/Projects/Hangman.png'),
-        description: 'An implementation of Hangman',
+        description: 'An implementation of Hangman game. Player crosses letters in an attempt to reveal the hidden word. Player has a set number of trials. If the wastes them, the game is lost.',
         url: 'https://codesandbox.io/s/hangman-du2mb',
     },
     {
         name: 'Memory Game',
         image: require('../../images/Projects/MemoryGame.png'),
-        description: 'An implementation of Memory card game',
+        description: 'An implementation of Memory card game. Player is trying a pair of same looking cards',
         url: 'https://codesandbox.io/s/memory-game-f7kt5',
     },
     {
@@ -74,6 +73,13 @@ const ProjectsList: IProject[] = [
     //   description:  "",
     //   url: "https://vatpit.herokuapp.com/"
     // },
+
+    // : `A dice poker game. 
+    //     The game consists of two rounds. In the first round, player rolls the dice. 
+    //     After rolling the dice, the score is calculated, in which player 
+    //     may roll the selected dices once again. After the second round, 
+    //     the final score is calculated and a point is given to the player that 
+    //     has won the game`,
 ];
 
 const presentProjects = () =>

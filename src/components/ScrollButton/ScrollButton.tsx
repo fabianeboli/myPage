@@ -5,7 +5,7 @@ import {ArrowIcon} from './ScrollButton.style'
 const ScrollButton = () => {
     return (
     <>
-        <a href="#Projects"><ArrowIcon crossOrigin size='56'/></a>
+        <a href="#Projects"><ArrowIcon crossOrigin size='72'/></a>
     </>
     )
 };

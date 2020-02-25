@@ -79,13 +79,8 @@ const presentSkills = (): JSX.Element[] =>
 
 const Skills: React.FC = () => {
     const skillsList: JSX.Element[] = presentSkills();
-    const firstHalf: JSX.Element[] = skillsList.slice(0, skillsList.length / 2);
-    const secondHalf: JSX.Element[] = skillsList.slice(skillsList.length / 2, skillsList.length);
     return (
         <S.container>
-            {/* <legend>Skills</legend> 
-            <div>{firstHalf}</div>
-            <div>{secondHalf}</div> */}
             <legend>Skills</legend>
                 {skillsList}
         </S.container>

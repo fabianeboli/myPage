@@ -5,12 +5,14 @@ export const container = styled.div`
     flex-grow: 1;
     text-align: center;
     position: relative;
-
 `;
 
 export const skillLogo = styled.img`
     max-width: calc(2.5em + 3.5vw);
     max-height: calc(2.5em + 3.5vh);
+    padding: 5px;
+    fill: currentColor;
+    color: red;
     /* width: 100%; */
     /* margin: calc(0.1em + 0.2vw); */
 `;

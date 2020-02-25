@@ -1,6 +1,7 @@
 import React from 'react';
 import App from 'next/app';
 import { ThemeProvider as ContextThemeProvider } from '../src/contexts/ThemeContext';
+import Background from '../src/components/Background/Background';
 // import { GlobalStyle, theme } from '../src/components/Theme.style';
 // import { ThemeProvider } from 'styled-components';
 

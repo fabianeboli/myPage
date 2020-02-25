@@ -10,11 +10,12 @@ export const container = styled.fieldset`
     /* border-radius: 35px; */
     /* border: 3px solid ${p => p.theme.headline}; */
     border: none;
-    box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),
-    0px 1px 1px 0px rgba(0,0,0,0.14),
-    0px 1px 3px 0px rgba(0,0,0,0.12);
-    margin: 0 10%;
-    padding: 15px;
+    box-shadow: ${p => p.theme.cardShadow};
+    margin: 0 5%;
+    position: relative;
+    top: 10%;
+    right: 1%;
+
     & legend {
         margin: 1% auto;
         font-size: calc(2em + 0.5vw);
@@ -23,6 +24,7 @@ export const container = styled.fieldset`
     & div {
         flex: 1 calc(2.0em + 4.0vw);
         min-width: 0;
+        
     }
 
     @media only screen and (max-width: ${p => p.theme.nonMobilePx}) {

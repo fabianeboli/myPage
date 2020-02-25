@@ -1,6 +1,6 @@
 import Particles from 'react-particles-js';
 import styled, { DefaultTheme, createGlobalStyle, keyframes } from 'styled-components';
-
+import backgroundImg from '../images/Background/Screenshot_2020-02-25 CodePen - SVG Gradient Wave Generator(1).png';
 export const theme: DefaultTheme = {
     background: '#fffffe',
     headline: '#272343',
@@ -8,57 +8,75 @@ export const theme: DefaultTheme = {
     button: '#ffd803',
     buttonText: '#fff',
     shadow: '#ccc',
-    gradient: 'linear-gradient(to right, #004e92, #000428);',
+    gradient: `linear-gradient(to bottom right, #004e9255, #000428aa), url('${backgroundImg}')`,
     gradientButton: 'linear-gradient(to right, #004e92, #000428);',
     overlayGradientBackground: 'linear-gradient(to bottom, #004e92,#fffffe);',
     nonMobilePx: '1025px',
+    cardShadow: ` 0px 2px 1px -1px rgba(0,0,0,0.2),
+    0px 1px 1px 0px rgba(0,0,0,0.14),
+    0px 1px 3px 0px rgba(0,0,0,0.12);`,
+    backgroundSize: `115% 115%`
 };
-
 
 export const darkTheme: DefaultTheme = {
     background: '#0F111A',
     headline: '#0ff',
     paragraph: '#fff',
     button: '#ffd803',
-    buttonText: '#5df',
-    shadow: '#5df',
-    gradient: 'linear-gradient(to right, #141e30, #000428);',
+    buttonText: '#fff',
+    shadow: '#000',
+    gradient: `linear-gradient(to bottom right, #2b587677, #4e4376aa)`,
     gradientButton: 'linear-gradient(135deg, #141e30, #000428);',
     overlayGradientBackground: 'linear-gradient(to bottom, #004e92,#fffffe);',
     nonMobilePx: '1025px',
-}
+    cardShadow: ` 0px 2px 1px -1px rgba(0,0,0,1),
+    0px 1px 1px 0px rgba(0,0,0,0.94),
+    0px 1px 3px 0px rgba(0,0,0,0.92);`,
+    backgroundSize: `300% 300%`
+    
+};
 
- const wave = keyframes`
-    from {
-        background-position: 0px 0px, 0px 0px;
+const wave = keyframes`
+    0% {
+        background-position: 0% 0%;
     }
-    to {
-        background-position: 10000000px 0px, 0px 0px;
+    50% {
+        background-position: 100% 15%;
+    }
+    100% {
+        background-position: 0% 0%;
     }
 `;
+// const wave = keyframes`
+//     from {
+//         background-position: 0% 0%;
+//     }
+//     to {
+//         background-position: 100% 0%;
+//     }
+   
+// `;
 
 export const GlobalStyle = createGlobalStyle`
     html, body {
         @import url('https://fonts.googleapis.com/css?family=MontSerrat:700|Lato:700|Noto+Sans&display=swap');
-        width: 100%;
-        height: 100%;
+        width: 100vw;
+        height: 100vh;
         font-family: 'Noto Sans', sans-serif; 
         background: #000428;  /* fallback for old browsers */
         background: -webkit-linear-gradient(to right, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
-        background-image: 
-        /* url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1055' height='126.6' viewBox='0 0 1 100'%3E%3Cg fill='none' stroke='%23047da4' stroke-width='27' stroke-opacity='0.1'%3E%3Cpath d='M-500 75c0 0 125-30 250-30S0 75 0 75s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 45c0 0 125-30 250-30S0 45 0 45s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 105c0 0 125-30 250-30S0 105 0 105s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 15c0 0 125-30 250-30S0 15 0 15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500-15c0 0 125-30 250-30S0-15 0-15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 135c0 0 125-30 250-30S0 135 0 135s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3C/g%3E%3C/svg%3E"),         */
-        ${p => p.theme.gradient};
-        /* animation: ${wave} 200000s linear infinite; */
-        /* background-attachment: fixed;
-        background-position: center; */
+        background-image: ${p => p.theme.gradient};
+        background-size: ${p => p.theme.backgroundSize};
+        background-attachment: fixed;
+        background-position: center;
+        animation: ${wave} 25s ease infinite;
         scroll-behavior: smooth;
     }
 `;
 
 export const particles = styled(Particles)`
-	position: fixed;
-	display: inline-block;
-	width: 100vw;
-	height: 90vh;
- `;
-
+    position: fixed;
+    display: inline-block;
+    width: 100vw;
+    height: 90vh;
+`;

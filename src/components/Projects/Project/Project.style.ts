@@ -6,11 +6,11 @@ export const container = styled.div`
 	font-size: calc(0.8em + 0.5vw);
 	display: flex;
 	flex-direction: column;
-	text-align: center;
     justify-content: center;
-	box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),
-    0px 1px 1px 0px rgba(0,0,0,0.14),
-    0px 1px 3px 0px rgba(0,0,0,0.12);
+    text-align: center;
+    align-content: center;
+    align-items: center;
+	box-shadow: ${p => p.theme.cardShadow};
     flex-grow: 0;
     flex-basis: 25%;
 
