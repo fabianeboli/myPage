@@ -14,7 +14,7 @@ export const container = styled.fieldset`
     margin: 0 5%;
     position: relative;
     top: 10%;
-    right: 1%;
+    
 
     & legend {
         margin: 1% auto;
@@ -27,6 +27,8 @@ export const container = styled.fieldset`
         
     }
 
-    @media only screen and (max-width: ${p => p.theme.nonMobilePx}) {
+    @media only screen and (min-width: ${p => p.theme.nonMobilePx}) {
+        right: 1%;
+
     }
 `;

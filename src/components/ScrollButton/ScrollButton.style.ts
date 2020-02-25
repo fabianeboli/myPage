@@ -17,19 +17,43 @@ const hangAnimation = keyframes`
 }
  `;
 
+export const container = styled.div`
+
+		
+`;
+
+export const inner = styled.div`
+    background: rgb(9, 201, 153);
+    padding: 1em;
+    border-radius: 10px;
+    width: 250px;
+    clip-path: circle(10% at 90% 20%);
+    transition: all 0.5s ease-in-out;
+
+    & p {
+    }
+
+		&:hover {
+        clip-path: circle(75%);
+        background: #00B6FF;
+    }
+`;
 
 export const ArrowIcon = styled(ArrowDropDownCircle)`
     color: ${p => p.theme.button};
     position: relative;
-    top: 30vh;
+    top: 5vh;
     opacity: 0.7;
     transition: opacity 0.7s;
+
 
     &:hover {
         cursor: pointer;
         animation: ${hangAnimation} 1s ease-in infinite;
         opacity: 1;
-   }
+    }
 
-   
+    @media only screen and (min-width: ${p => p.theme.nonMobilePx}) {
+        top: 30vh !important;
+    }
 `;

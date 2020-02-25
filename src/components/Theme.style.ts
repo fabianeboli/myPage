@@ -15,7 +15,7 @@ export const theme: DefaultTheme = {
     cardShadow: ` 0px 2px 1px -1px rgba(0,0,0,0.2),
     0px 1px 1px 0px rgba(0,0,0,0.14),
     0px 1px 3px 0px rgba(0,0,0,0.12);`,
-    backgroundSize: `115% 115%`
+    backgroundSize: `125% 115%`
 };
 
 export const darkTheme: DefaultTheme = {
@@ -32,7 +32,7 @@ export const darkTheme: DefaultTheme = {
     cardShadow: ` 0px 2px 1px -1px rgba(0,0,0,1),
     0px 1px 1px 0px rgba(0,0,0,0.94),
     0px 1px 3px 0px rgba(0,0,0,0.92);`,
-    backgroundSize: `300% 300%`
+    backgroundSize: `550% 550%`
     
 };
 
@@ -47,15 +47,7 @@ const wave = keyframes`
         background-position: 0% 0%;
     }
 `;
-// const wave = keyframes`
-//     from {
-//         background-position: 0% 0%;
-//     }
-//     to {
-//         background-position: 100% 0%;
-//     }
-   
-// `;
+
 
 export const GlobalStyle = createGlobalStyle`
     html, body {
@@ -69,8 +61,9 @@ export const GlobalStyle = createGlobalStyle`
         background-size: ${p => p.theme.backgroundSize};
         background-attachment: fixed;
         background-position: center;
-        animation: ${wave} 25s ease infinite;
+        animation: ${wave} 25s linear infinite;
         scroll-behavior: smooth;
+        margin: 0;
     }
 `;
 

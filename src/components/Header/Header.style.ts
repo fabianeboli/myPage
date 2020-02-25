@@ -4,18 +4,22 @@ import { Github } from 'styled-icons/fa-brands/Github'
 
 export const container = styled.div`
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    
     flex-direction: column;
     color: ${p => p.theme.headline};
     text-shadow: 2px 2px 1px ${p => p.theme.shadow};
     height: 80vh;
-    margin: 0 5%;
+    margin: 0;
     width: 100%;
    
 
     @media only screen and (min-width: ${p => p.theme.nonMobilePx}) {
         flex-direction: row;
+        justify-content: space-around;
+        margin: 0 5%;
+
     }
 `;
 
@@ -24,9 +28,12 @@ export const showcaseContainer = styled.div`
     font-family: 'Lato', sans-serif;
     /* margin: 15% auto; */
     /* max-width: 25vw; */
-    font-size: calc(1.2em + 1.1vw);
-    position: relative;
+    font-size: calc(0.8em + 1.6vw);
     bottom: 9%;
+
+    @media only screen and (min-width: ${p => p.theme.nonMobilePx}) {
+        flex-direction: row;
+    } 
 `;
 
 export const nameContainer = styled.div`
