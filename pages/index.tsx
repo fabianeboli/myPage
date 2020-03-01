@@ -7,6 +7,7 @@ import { GlobalStyle, particles as Particles } from '../src/components/Theme.sty
 import { ThemeProvider } from 'styled-components';
 import ThemeSwtich from '../src/components/ThemeSwitch/ThemeSwtich';
 import { ThemeContext } from '../src/contexts/ThemeContext';
+import LanguageSwitch from '../src/components/LanguageSwitch/LanguageSwitch';
 
 const index = () => {
 	const {theme, isDark} = useContext(ThemeContext)
@@ -70,6 +71,7 @@ const index = () => {
 			/>}
 						<ThemeSwtich/>
                     <Overlay>
+						<LanguageSwitch/>
                         <Header />
                         <Projects />
                     </Overlay>

@@ -4,7 +4,7 @@ import * as S from './Project.style';
 export interface IProject {
     name: string;
     image: string;
-    description: string;
+    description?: string;
     url: string;
 }
 

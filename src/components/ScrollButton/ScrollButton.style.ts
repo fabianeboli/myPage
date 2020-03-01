@@ -17,27 +17,6 @@ const hangAnimation = keyframes`
 }
  `;
 
-export const container = styled.div`
-
-		
-`;
-
-export const inner = styled.div`
-    background: rgb(9, 201, 153);
-    padding: 1em;
-    border-radius: 10px;
-    width: 250px;
-    clip-path: circle(10% at 90% 20%);
-    transition: all 0.5s ease-in-out;
-
-    & p {
-    }
-
-		&:hover {
-        clip-path: circle(75%);
-        background: #00B6FF;
-    }
-`;
 
 export const ArrowIcon = styled(ArrowDropDownCircle)`
     color: ${p => p.theme.button};

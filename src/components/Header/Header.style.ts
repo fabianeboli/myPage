@@ -28,7 +28,7 @@ export const showcaseContainer = styled.div`
     font-family: 'Lato', sans-serif;
     /* margin: 15% auto; */
     /* max-width: 25vw; */
-    font-size: calc(0.8em + 1.6vw);
+    font-size: calc(1.2em + 1.1vw);
     bottom: 9%;
 
     @media only screen and (min-width: ${p => p.theme.nonMobilePx}) {

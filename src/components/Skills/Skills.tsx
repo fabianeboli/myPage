@@ -2,6 +2,9 @@ import React from 'react';
 import Skill, { ISkill } from './Skill/Skill';
 import uuid from 'uuid/v4';
 import * as S from './Skills.style';
+import { LanguageContext } from '../../contexts/LanguageContext';
+import { useContext } from 'react';
+import {words } from '../../Language/words';
 
 const skillsList: ISkill[] = [
     {
@@ -78,10 +81,13 @@ const presentSkills = (): JSX.Element[] =>
     skillsList.map(skill => <Skill key={uuid()} name={skill.name} image={skill.image} />);
 
 const Skills: React.FC = () => {
+    const {language} = useContext(LanguageContext); 
+    const {skills} = words[language];
+
     const skillsList: JSX.Element[] = presentSkills();
     return (
         <S.container>
-            <legend>Skills</legend>
+            <legend>{skills}</legend>
                 {skillsList}
         </S.container>
     );

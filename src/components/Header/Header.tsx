@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useContext} from 'react';
 import * as S from './Header.style';
 import Skills from '../Skills/Skills';
 import Animation from './Animation/Animation';
 import ScrollButton from '../ScrollButton/ScrollButton';
+import { LanguageContext } from '../../contexts/LanguageContext';
 
 const Header = () => {
     return (
@@ -17,7 +18,7 @@ const Header = () => {
                 <S.contact>
                     <S.link href="mailto:fabianeboli@tutanota.com">fabianeboli@tutanota.com</S.link>
                     <S.link href="https://www.github.com/fabianeboli">
-                        <S.github size="32" crossOrigin />
+                        <S.github size="32" />
                     </S.link>
                 </S.contact>
                 <ScrollButton />

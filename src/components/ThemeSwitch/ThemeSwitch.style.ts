@@ -20,13 +20,16 @@ const lightBulb = `
 export const lightBulbOff = styled(faLightBulbOff)`
     ${lightBulb};
     background-color: ${p => p.theme.background};
+
+    &:hover {
+        color: ${p => p.theme.button}; 
+    }
 `;
 
 export const lightBulbOn = styled(faLightBulbOn)`
     ${lightBulb};
     background-color: ${p => p.theme.background};
     color: ${p => p.theme.button + '32'};
-    text-shadow: 1px 1px 100px red;
     background-image: radial-gradient(rgba(255,216,3,0.8),rgba(255,216,3,0.1) );
     box-shadow: 0px 0px 10px rgba(255,216,3,0.9),
     0px 0px 80px 10px rgba(255,216,3,0.85),

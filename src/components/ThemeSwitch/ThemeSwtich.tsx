@@ -12,8 +12,8 @@ const ThemeSwitch = () => {
 
     return (
         <div onClick={() => handleClick()}>
-            {isDark && <S.lightBulbOn size="32" crossOrigin />}
-            {!isDark && <S.lightBulbOff size="32" crossOrigin />}
+            {isDark && <S.lightBulbOn size="32" />}
+            {!isDark && <S.lightBulbOff size="32"  />}
         </div>
     );
 };

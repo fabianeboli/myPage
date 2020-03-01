@@ -44,7 +44,8 @@ export const container = styled.div`
 export const image = styled.div<{ image: string }>`
     background-image: url(${p => p.image});
     font-size: calc(5em + 0.7vw);
-    height: 15vh;
+    min-height: 15vh;
+   
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -58,12 +59,10 @@ export const description = styled.p`
 `;
 
 export const title = styled.h2`
-    /* text-align: center; */
     font-weight: bold;
     font-size: 1.7em;
     margin: 1% 5px;
     color: ${p => p.theme.headline};
-    /* text-shadow: 1px 1px 1px ${p => p.theme.shadow}; */
 `;
 
 export const projectDetails = styled.div`

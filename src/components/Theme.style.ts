@@ -2,7 +2,7 @@ import Particles from 'react-particles-js';
 import styled, { DefaultTheme, createGlobalStyle, keyframes } from 'styled-components';
 import backgroundImg from '../images/Background/Screenshot_2020-02-25 CodePen - SVG Gradient Wave Generator(1).png';
 export const theme: DefaultTheme = {
-    background: '#fffffe',
+    background: '#FFFDF1',
     headline: '#272343',
     paragraph: '#545866',
     button: '#ffd803',
@@ -32,7 +32,7 @@ export const darkTheme: DefaultTheme = {
     cardShadow: ` 0px 2px 1px -1px rgba(0,0,0,1),
     0px 1px 1px 0px rgba(0,0,0,0.94),
     0px 1px 3px 0px rgba(0,0,0,0.92);`,
-    backgroundSize: `550% 550%`
+    backgroundSize: `450% 450%`
     
 };
 
@@ -41,7 +41,7 @@ const wave = keyframes`
         background-position: 0% 0%;
     }
     50% {
-        background-position: 100% 15%;
+        background-position: 100% 30%;
     }
     100% {
         background-position: 0% 0%;
