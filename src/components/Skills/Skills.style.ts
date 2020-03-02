@@ -11,12 +11,12 @@ export const container = styled.fieldset`
     /* border: 3px solid ${p => p.theme.headline}; */
     border: none;
     box-shadow: ${p => p.theme.cardShadow};
-    margin: 0 5%;
-    position: relative;
+    margin: 10vh 5%;
     top: 10%;
     
 
     & legend {
+        color: ${p => p.theme.headline};
         margin: 1% auto;
         font-size: calc(2em + 0.5vw);
     }

@@ -1,5 +1,8 @@
 import React from 'react';
 import * as S from './Project.style';
+import { LanguageContext } from '../../../contexts/LanguageContext';
+import { useContext } from 'react';
+import { words } from '../../../Language/words';
 
 export interface IProject {
     name: string;
@@ -9,6 +12,8 @@ export interface IProject {
 }
 
 const Project = (props: IProject) => {
+    const { language } = useContext(LanguageContext);
+    const { liveVersion } = words[language];
     return (
         <>
             <S.container>
@@ -18,7 +23,7 @@ const Project = (props: IProject) => {
                     <S.description>{props.description}</S.description>
                 </S.projectDetails>
                 <S.link href={props.url}>
-                    <button>Live version</button>
+                    <S.button>{liveVersion}</S.button>
                 </S.link>
             </S.container>
         </>

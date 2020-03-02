@@ -6,7 +6,7 @@ export const words = {
             lightsOut:
                 `An implementation of classic lightsOut Game, where the player must flip the lights.`,
             restaurant: "Website for fictional sushi bar that delivers orders to home.",
-            vatPit: `A website for an accountant`,
+            vatPit: `A website for a freelancer accountant from Ostrowo.`,
             dryJokes: `A web application that fetches jokes from icanhazdadjoke API.`,
             dicePoker: `A dice poker game. 
             The game consists of two rounds. After the second round, 
@@ -22,10 +22,10 @@ export const words = {
     polish: {
         skills: `Umiejętności`,
         projectDescription: {
-            gameOfLife: `Wdrożenie gry w życie.`,
+            gameOfLife: `Wdrożenie gry w życie Johna Conwaya.`,
             lightsOut: `Wdrożenie gry, w której gracz ma zadanie przełączenie wszystkich świateł`,
             restaurant: `Strona dla fikcyjnej restaurcaji przygotowującej sushi`,
-            vatPit: `Strona internetowa dla księgowej`,
+            vatPit: `Strona internetowa dla księgowej z Ostrowa.`,
             dryJokes: `Aplikacja pobierająca żarty z icanhazdadjoke API.`,
             dicePoker: `Wdrożenie kościanego pokera. 
            Gra składa się z dwóch rund. Po drugiej rundzie, 
@@ -34,7 +34,7 @@ export const words = {
             memoryGame: `Gra pamięciowa, w której gracz próbuje znaleźć parę kart`,
             pixelArtGame: `Gra, w której gracz wybiera dwa kolory oraz rozmiar siatki, poczym gracz może ubarwić siatkę.`,
         },
-        liveVersion: `Przejdź do przykładu`,
+        liveVersion: `Przykład`,
         footer: `@Copyright 2020 Wszelkie prawa zastrzeżone`,
     },
 };

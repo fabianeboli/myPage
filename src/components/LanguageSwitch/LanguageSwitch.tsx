@@ -7,8 +7,8 @@ import { LanguageContext, LangTypes } from '../../contexts/LanguageContext';
 import { useContext } from 'react';
 
 const LanguageSwitch = () => {
-    const { language, changeLanguage } = useContext(LanguageContext);
-    const handleLanguageChange = (event: any) => {
+    const {  changeLanguage } = useContext(LanguageContext);
+    const handleLanguageChange = (event: LangTypes) => {
         changeLanguage(event);
     };
     return (

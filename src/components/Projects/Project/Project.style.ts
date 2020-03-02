@@ -9,43 +9,51 @@ export const container = styled.div`
     justify-content: center;
     text-align: center;
     align-content: center;
-    align-items: center;
+    align-items: center unsafe;
 	box-shadow: ${p => p.theme.cardShadow};
-    flex-grow: 0;
+    flex-grow: 1;
     flex-basis: 25%;
 
-	& div:first-of-type {
-		display: flex;
-		align-items: flex-start;
-		color: ${p => p.theme.headline};
-	}
+	
 
-	& button {
-        border: none;
-        max-width: 100%;
-		font-weight: bold;
-        border-radius: 2px;
-        padding: 5px;
-		font-size: 1.1em;
-		color:  ${p => p.theme.buttonText};
-        background-image: ${p => p.theme.gradientButton};
-        text-shadow: 1px 0px 2px black;
-        appearance: none;
-        margin: 0.375em;
-        transition: 0.3s ease;
-	}
+	
+`;
 
-	& button:hover{
-		box-shadow: 2px 4px 6px ${p => p.theme.shadow};
+export const button = styled.button`
+    border: none;
+    max-width: 100%;
+    font-weight: bold;
+    border-radius: 60px;
+    background-size: 300% 100%;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    color: ${p => p.theme.buttonText};
+    background-image: ${p => p.theme.gradientButton};
+    text-align: center;
+    border: none;
+    font-weight: bold;
+    appearance: none;
+    margin: 0.375em;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 5px 0 ${p => p.theme.buttonShadow};
+    transition: all 0.4s ease-in-out;
+
+    &:hover {
+        background-position: 100% 0;
+        box-shadow: 0px 2px 8px 2px ${p => p.theme.buttonShadow};
         cursor: pointer;
-	}
+        transition: all 0.4s ease-in-out;
+    }
+
+    &:focus {
+        outline: none;
+    }
 `;
 
 export const image = styled.div<{ image: string }>`
     background-image: url(${p => p.image});
-    font-size: calc(5em + 0.7vw);
-    min-height: 15vh;
-   
+    height: 20vh;
+    align-self: stretch;
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -54,7 +62,7 @@ export const image = styled.div<{ image: string }>`
 `;
 
 export const description = styled.p`
-    font-size: 1.0em;
+    font-size: 1em;
     color: ${p => p.theme.paragraph};
 `;
 
@@ -75,6 +83,9 @@ export const projectDetails = styled.div`
 `;
 
 export const link = styled.a`
+    align-self: flex-end;
+    flex: 1 auto;
+    align-self: flex-end;
     text-decoration: none;
     color: ${p => p.theme.buttonText};
     font-weight: bold;
@@ -86,4 +97,3 @@ export const link = styled.a`
         text-decoration: underline;
     }
 `;
-

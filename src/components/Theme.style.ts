@@ -9,7 +9,8 @@ export const theme: DefaultTheme = {
     buttonText: '#fff',
     shadow: '#ccc',
     gradient: `linear-gradient(to bottom right, #004e9255, #000428aa), url('${backgroundImg}')`,
-    gradientButton: 'linear-gradient(to right, #004e92, #000428);',
+    gradientButton: 'linear-gradient(to right, #0ba360, #3cba92, #30dd8a, #2bb673)',
+    buttonShadow: 'rgba(23, 168, 108, 0.75)',
     overlayGradientBackground: 'linear-gradient(to bottom, #004e92,#fffffe);',
     nonMobilePx: '1025px',
     cardShadow: ` 0px 2px 1px -1px rgba(0,0,0,0.2),
@@ -26,7 +27,8 @@ export const darkTheme: DefaultTheme = {
     buttonText: '#fff',
     shadow: '#000',
     gradient: `linear-gradient(to bottom right, #2b587677, #4e4376aa)`,
-    gradientButton: 'linear-gradient(135deg, #141e30, #000428);',
+    gradientButton: 'linear-gradient(to right, #0ba360, #3cba92, #30dd8a, #2bb673)',
+    buttonShadow: 'rgba(23, 168, 108, 0.75)',
     overlayGradientBackground: 'linear-gradient(to bottom, #004e92,#fffffe);',
     nonMobilePx: '1025px',
     cardShadow: ` 0px 2px 1px -1px rgba(0,0,0,1),
@@ -61,7 +63,7 @@ export const GlobalStyle = createGlobalStyle`
         background-size: ${p => p.theme.backgroundSize};
         background-attachment: fixed;
         background-position: center;
-        animation: ${wave} 25s linear infinite;
+        animation: ${wave} 25s ease-in-out infinite;
         scroll-behavior: smooth;
         margin: 0;
     }

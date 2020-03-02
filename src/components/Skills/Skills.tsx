@@ -87,7 +87,7 @@ const Skills: React.FC = () => {
     const skillsList: JSX.Element[] = presentSkills();
     return (
         <S.container>
-            <legend>{skills}</legend>
+            <legend id="Skills">{skills}</legend>
                 {skillsList}
         </S.container>
     );

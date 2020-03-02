@@ -1,30 +1,39 @@
-import React, { useContext} from 'react';
+import React from 'react';
 import * as S from './Header.style';
 import Skills from '../Skills/Skills';
-import Animation from './Animation/Animation';
 import ScrollButton from '../ScrollButton/ScrollButton';
-import { LanguageContext } from '../../contexts/LanguageContext';
-
+import backgroundImage from '../../images/Header/Workspace_2_SVG.svg';
 const Header = () => {
     return (
-        <S.container>
-            <S.showcaseContainer>
-                <S.nameContainer>
-                    <S.name>Fabian Eboli </S.name>
-                    <S.title>
-                        <span>Web developer</span>
-                    </S.title>
-                </S.nameContainer>
-                <S.contact>
-                    <S.link href="mailto:fabianeboli@tutanota.com">fabianeboli@tutanota.com</S.link>
-                    <S.link href="https://www.github.com/fabianeboli">
-                        <S.github size="32" />
-                    </S.link>
-                </S.contact>
-                <ScrollButton />
-            </S.showcaseContainer>
-            <Skills />
-        </S.container>
+        <>
+            <S.container>
+                <S.headerContainer>
+                    <S.showcaseContainer>
+                        <S.headerContainer>
+                            <S.nameContainer>
+                                <S.name>Fabian Eboli </S.name>
+                                <S.title>
+                                    <span>Web developer</span>
+                                </S.title>
+                            </S.nameContainer>
+                        </S.headerContainer>
+                        <S.contact>
+                            <S.link href="mailto:fabianeboli@tutanota.com">
+                                fabianeboli@tutanota.com
+                            </S.link>
+                            <S.link href="https://www.github.com/fabianeboli">
+                                <S.github size="32" />
+                            </S.link>
+                        </S.contact>
+                    </S.showcaseContainer>
+                    <S.backgroundContainer>
+                        <S.backgroundImage src={backgroundImage} />
+                    </S.backgroundContainer>
+                </S.headerContainer>
+            <ScrollButton />
+
+            </S.container>
+        </>
     );
 };
 

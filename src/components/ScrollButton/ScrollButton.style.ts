@@ -18,13 +18,20 @@ const hangAnimation = keyframes`
  `;
 
 
+export const link = styled.a`
+    break-after: always;
+    width: 100%;
+    text-align: center;
+
+`
+
+
 export const ArrowIcon = styled(ArrowDropDownCircle)`
     color: ${p => p.theme.button};
     position: relative;
     top: 5vh;
     opacity: 0.7;
     transition: opacity 0.7s;
-
 
     &:hover {
         cursor: pointer;
@@ -33,6 +40,6 @@ export const ArrowIcon = styled(ArrowDropDownCircle)`
     }
 
     @media only screen and (min-width: ${p => p.theme.nonMobilePx}) {
-        top: 30vh !important;
+        top: 5vh !important;
     }
 `;

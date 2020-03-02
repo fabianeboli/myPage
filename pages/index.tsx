@@ -8,6 +8,8 @@ import { ThemeProvider } from 'styled-components';
 import ThemeSwtich from '../src/components/ThemeSwitch/ThemeSwtich';
 import { ThemeContext } from '../src/contexts/ThemeContext';
 import LanguageSwitch from '../src/components/LanguageSwitch/LanguageSwitch';
+import Skills from '../src/components/Skills/Skills';
+import Footer from '../src/components/Footer/Footer';
 
 const index = () => {
 	const {theme, isDark} = useContext(ThemeContext)
@@ -73,8 +75,10 @@ const index = () => {
                     <Overlay>
 						<LanguageSwitch/>
                         <Header />
+						<Skills />
                         <Projects />
                     </Overlay>
+					<Footer/>
                 </>
             </ThemeProvider>
         </>
