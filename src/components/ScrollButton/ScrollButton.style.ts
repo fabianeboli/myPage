@@ -30,10 +30,10 @@ export const link = styled.a`
 export const ArrowIcon = styled(ArrowWithCircleDown)`
     color: ${p => p.theme.button};
     position: relative;
-    top: 5vh;
+    top: 10vh;
     opacity: 0.5;
+    border: transparent;
     transition: opacity 0.7s;
-
     &:hover {
         cursor: pointer;
         animation: ${hangAnimation} 1s ease-in infinite;

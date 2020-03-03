@@ -18,7 +18,7 @@ export const theme: DefaultTheme = {
     0px 1px 3px 0px rgba(0,0,0,0.12);`,
     backgroundSize: `125% 115%`
 };
-
+// #35665a, #36685b, #034f59, #00324e
 export const darkTheme: DefaultTheme = {
     background: '#0F111A',
     headline: '#0ff',

@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const container = styled.div`
-	/* border-left: 4px solid ${p => p.theme.headline}; */
 	margin: 5% 2%;
 	font-size: calc(0.8em + 0.5vw);
     display: flex;
@@ -9,12 +8,11 @@ export const container = styled.div`
     justify-content: center;
     align-content: baseline;
     align-items: center;
-    text-align: center;	
 	box-shadow: ${p => p.theme.cardShadow};
     flex-grow: 1;
     flex-basis: 25%;
     line-height: 1.6;
-    
+    text-align: center;
 `;
 
 export const buttonContainer = styled.div`
@@ -26,17 +24,18 @@ export const button = styled.button`
     font-weight: bold;
     border-radius: 60px;
     background-size: 300% 100%;
-    padding: 10px 15px;
+    padding: 0.4em 0.9em;
     font-size: 1.1em;
     color: ${p => p.theme.buttonText};
     background-image: ${p => p.theme.gradientButton};
-    text-align: center;
     border: none;
     font-weight: bold;
     margin: 0.375em;
     transition: 0.3s ease;
     box-shadow: 0 4px 5px 0 ${p => p.theme.buttonShadow};
     transition: all 0.4s ease-in-out;
+    text-shadow: 1px 1px 1px black;
+
 
     &:hover {
         background-position: 100% 0;
@@ -62,7 +61,7 @@ export const image = styled.div<{ image: string }>`
 `;
 
 export const description = styled.p`
-    font-size: 1em;
+    
     color: ${p => p.theme.paragraph};
 `;
 
@@ -74,7 +73,7 @@ export const title = styled.h2`
 `;
 
 export const projectDetails = styled.div`
-    text-align: center;
+    
     color: ${p => p.theme.paragraph};
     flex: 1;
 `;

@@ -12,8 +12,8 @@ const lightBulb = `
     border: none;
     float: right;
     position: relative;
-    bottom: 2vh;
-    right: 2vw;
+    bottom: 1vh;
+    right: 3vw;
     z-index: 1000;
 `;
 
