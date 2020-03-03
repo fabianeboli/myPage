@@ -23,15 +23,15 @@ export const words = {
         skills: `Umiejętności`,
         projectDescription: {
             gameOfLife: `Wdrożenie gry w życie Johna Conwaya.`,
-            lightsOut: `Wdrożenie gry, w której gracz ma zadanie przełączenie wszystkich świateł`,
-            restaurant: `Strona dla fikcyjnej restaurcaji przygotowującej sushi`,
+            lightsOut: `Wdrożenie gry, w której gracz ma zadanie przełączenie wszystkich świateł.`,
+            restaurant: `Strona dla fikcyjnej restaurcaji przygotowującej sushi.`,
             vatPit: `Strona internetowa dla księgowej z Ostrowa.`,
             dryJokes: `Aplikacja pobierająca żarty z icanhazdadjoke API.`,
             dicePoker: `Wdrożenie kościanego pokera. 
            Gra składa się z dwóch rund. Po drugiej rundzie, 
             zliczane są punkty. Gracz, który ma większą ilość punktów wygrywa grę.`,
             hangman: `Wdrożenie wisielca. Gracz stara się odgadnąć ukryte słowo poprzez skreślenie liter. Gracz ma limitowaną ilość życ.`,
-            memoryGame: `Gra pamięciowa, w której gracz próbuje znaleźć parę kart`,
+            memoryGame: `Gra pamięciowa, w której gracz próbuje znaleźć parę kart.`,
             pixelArtGame: `Gra, w której gracz wybiera dwa kolory oraz rozmiar siatki, poczym gracz może ubarwić siatkę.`,
         },
         liveVersion: `Przykład`,

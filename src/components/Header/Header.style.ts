@@ -41,11 +41,8 @@ export const backgroundImage = styled.img`
     height: auto;
 
     @media only screen and (min-width: ${p => p.theme.nonMobilePx}) {
-        width: 35vw;
-;
-        
-    }
-    
+        width: 35vw;    
+    } 
 `
 
 export const showcaseContainer = styled.div`
@@ -54,7 +51,7 @@ export const showcaseContainer = styled.div`
     font-family: 'Lato', sans-serif;
     /* margin: 15% auto; */
     /* max-width: 25vw; */
-    font-size: calc(1.2em + 1.3vw);
+    font-size: calc(1.1em + 1.35vw);
     bottom: 9%;
 
     @media only screen and (min-width: ${p => p.theme.nonMobilePx}) {

@@ -22,9 +22,12 @@ const Project = (props: IProject) => {
                     <S.image image={props.image} />
                     <S.description>{props.description}</S.description>
                 </S.projectDetails>
+                <S.buttonContainer>
                 <S.link href={props.url}>
                     <S.button>{liveVersion}</S.button>
                 </S.link>
+                </S.buttonContainer>
+                
             </S.container>
         </>
     );

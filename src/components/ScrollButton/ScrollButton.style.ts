@@ -1,5 +1,5 @@
 import styled, { keyframes } from 'styled-components';
-import { ArrowDropDownCircle } from 'styled-icons/material/ArrowDropDownCircle';
+import { ArrowWithCircleDown } from 'styled-icons/entypo/ArrowWithCircleDown';
 
 const hangAnimation = keyframes`
    10% {
@@ -22,15 +22,16 @@ export const link = styled.a`
     break-after: always;
     width: 100%;
     text-align: center;
+    outline: none;
 
 `
 
 
-export const ArrowIcon = styled(ArrowDropDownCircle)`
+export const ArrowIcon = styled(ArrowWithCircleDown)`
     color: ${p => p.theme.button};
     position: relative;
     top: 5vh;
-    opacity: 0.7;
+    opacity: 0.5;
     transition: opacity 0.7s;
 
     &:hover {
