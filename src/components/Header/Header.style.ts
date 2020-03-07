@@ -77,6 +77,7 @@ export const title = styled.h3`
 
     & span {
         color: ${p => p.theme.button};
+        text-shadow: 1px 0px 2px ${p => p.theme.button};
     }
 `;
 
@@ -94,6 +95,7 @@ export const link = styled.a`
     text-decoration: none;
     transition: 0.1s linear;
     padding: 0 5px;
+    
     &:hover {
         text-decoration: underline;
         color: ${p => p.theme.button};

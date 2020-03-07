@@ -8,7 +8,7 @@ export const theme: DefaultTheme = {
     button: '#ffd803',
     buttonText: '#fff',
     shadow: '#ccc',
-    gradient: `linear-gradient(to bottom right, #004e9255, #000428aa), url('${backgroundImg}')`,
+    gradient: `linear-gradient(to bottom right, #004e9250, #000428aa), url('${backgroundImg}')`,
     gradientButton: 'linear-gradient(to right, #0ba360, #3cba92, #30dd8a, #2bb673)',
     buttonShadow: 'rgba(23, 168, 108, 0.75)',
     overlayGradientBackground: 'linear-gradient(to bottom, #004e92,#fffffe);',
@@ -16,7 +16,7 @@ export const theme: DefaultTheme = {
     cardShadow: ` 0px 2px 1px -1px rgba(0,0,0,0.2),
     0px 1px 1px 0px rgba(0,0,0,0.14),
     0px 1px 3px 0px rgba(0,0,0,0.12);`,
-    backgroundSize: `125% 115%`
+    backgroundSize: `125% 115%`,
 };
 // #35665a, #36685b, #034f59, #00324e
 export const darkTheme: DefaultTheme = {
@@ -25,7 +25,7 @@ export const darkTheme: DefaultTheme = {
     paragraph: '#fff',
     button: '#ffd803',
     buttonText: '#fff',
-    shadow: '#000',
+    shadow: '#222',
     gradient: `linear-gradient(to bottom right, #2b587677, #4e4376aa)`,
     gradientButton: 'linear-gradient(to right, #0ba360, #3cba92, #30dd8a, #2bb673)',
     buttonShadow: 'rgba(23, 168, 108, 0.75)',
@@ -34,8 +34,7 @@ export const darkTheme: DefaultTheme = {
     cardShadow: ` 0px 2px 1px -1px rgba(0,0,0,1),
     0px 1px 1px 0px rgba(0,0,0,0.94),
     0px 1px 3px 0px rgba(0,0,0,0.92);`,
-    backgroundSize: `450% 450%`
-    
+    backgroundSize: `450% 450%`,
 };
 
 const wave = keyframes`
@@ -43,17 +42,17 @@ const wave = keyframes`
         background-position: 0% 0%;
     }
     50% {
-        background-position: 100% 30%;
+        background-position: 25% 100%;
     }
     100% {
         background-position: 0% 0%;
     }
 `;
 
-
 export const GlobalStyle = createGlobalStyle`
+
     html, body {
-        @import url('https://fonts.googleapis.com/css?family=MontSerrat:700|Lato:700|Noto+Sans&display=swap');
+        @import url('https://fonts.googleapis.com/css?family=Lato:400,700|Noto+Sans&display=swap');
         width: 100vw;
         height: 100vh;
         font-family: 'Noto Sans', sans-serif; 
@@ -63,7 +62,7 @@ export const GlobalStyle = createGlobalStyle`
         background-size: ${p => p.theme.backgroundSize};
         background-attachment: fixed;
         background-position: center;
-        animation: ${wave} 25s ease-in-out infinite;
+        animation: ${wave} 25s ease-out infinite;
         scroll-behavior: smooth;
         margin: 0;
     }

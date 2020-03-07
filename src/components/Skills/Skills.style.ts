@@ -13,7 +13,6 @@ export const container = styled.fieldset`
     box-shadow: ${p => p.theme.cardShadow};
     margin: 10vh 5%;
     top: 10%;
-    
 
     & legend {
         color: ${p => p.theme.headline};

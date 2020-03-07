@@ -22,13 +22,18 @@ export const inner = styled.div`
     position: absolute;
     height: 10vh;
     background: hsl(100.27deg, 55.37%, 47.45%);
-    width: calc(8.0rem + 15.9vw);
+    width: calc(5.0rem + 35.9vw);
     padding: 0.4vh 0;
     clip-path: circle(calc(2.6rem + 1.1vw) at 0% 0%);
     transition: all 0.5s ease-in-out;
     box-shadow: ${p => p.theme.cardShadow};
     /* hsla(​184.41deg, 61.82%, ​ 21.57%)*/
 
+    @media only screen and (min-width: ${p => p.theme.nonMobilePx}) {
+        width: calc(5.0rem + 15.9vw);
+ 
+    }
+    
     & img {
         width: calc(3.0rem + 1.5vw);
         height: calc(2.0rem + 1.5vh);
@@ -40,7 +45,7 @@ export const inner = styled.div`
         background: hsl(201, 50.21%, 44.50%);
         /* background: hsl(184.27deg, 71.37%, 37.45%); */
         border-radius: 2px;
-        height: calc(1em + 5vh);
+        height: calc(1rem + 3vh);
     }
 
      &:hover ${flags} {

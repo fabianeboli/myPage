@@ -34,7 +34,6 @@ export const button = styled.button`
     transition: 0.3s ease;
     box-shadow: 0 4px 5px 0 ${p => p.theme.buttonShadow};
     transition: all 0.4s ease-in-out;
-    text-shadow: 1px 1px 1px black;
 
 
     &:hover {
@@ -67,7 +66,7 @@ export const description = styled.p`
 
 export const title = styled.h2`
     font-weight: bold;
-    font-size: 1.7em;
+    font-size: calc(1.0em + 0.9vw);
     margin: 1% 5px;
     color: ${p => p.theme.headline};
 `;

@@ -9,15 +9,15 @@ import {words } from '../../Language/words';
 const skillsList: ISkill[] = [
     {
         name: 'HTML5',
-        image: require('../../images/Skills/html-5-logo-svg-vector.svg'),
+        image: require('../../images/Skills/html-5-logo-svg-vector.svg?include'),
     },
     {
         name: 'CSS3',
-        image: require('../../images/Skills/css-3-logo-svg-vector.svg'),
+        image: require('../../images/Skills/css-3-logo-svg-vector.svg?include'),
     },
     {
         name: 'Javascript',
-        image: require('../../images/Skills/javascript-logo-svg-vector.svg'),
+        image: require('../../images/Skills/javascript-logo-svg-vector.svg?include'),
     },
     {
         name: 'Typescript',
@@ -83,7 +83,7 @@ const presentSkills = (): JSX.Element[] =>
 const Skills: React.FC = () => {
     const {language} = useContext(LanguageContext); 
     const {skills} = words[language];
-
+   
     const skillsList: JSX.Element[] = presentSkills();
     return (
         <S.container>
