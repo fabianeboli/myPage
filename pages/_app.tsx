@@ -8,7 +8,7 @@ import ThemeSwitch from '../src/components/ThemeSwitch/ThemeSwitch';
 import Footer from '../src/components/Footer/Footer';
 import Overlay from '../src/components/Overlay/Overlay';
 import Particles from 'react-particles-js';
-import Loader from '../src/components/Loader/Loader';
+import  Head  from 'next/head';
 
 const Theme = (props: { children: any }) => {
     const { theme } = useContext(ThemeContext);
@@ -126,6 +126,9 @@ class MyApp extends App {
         return (
             <>
                 <Main>
+            <Head>
+            <title>Fabian Eboli - my Website</title>
+            </Head>
                     <Component {...pageProps} />
                 </Main>
             </>

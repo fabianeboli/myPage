@@ -126,7 +126,7 @@ export const GlobalStyle = createGlobalStyle`
        /* @import url('https://fonts.googleapis.com/css?family=Lato:400,700|Noto+Sans:400&display=swap'); */
 
     html, body {
-        width: 95vw;
+        width: 99.11vw;
         height: 100vh;
         font-family: 'Noto Sans', sans-serif; 
         background: #000428;  /* fallback for old browsers */
