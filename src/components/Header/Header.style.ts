@@ -1,7 +1,6 @@
-import { theme } from './../Theme.style';
 import styled from 'styled-components';
 import { Github } from 'styled-icons/fa-brands/Github';
-import background from '../../images/Header/Workspace_2_SVG.svg';
+
 export const container = styled.div`
     display: flex;
     justify-content: stretch;
@@ -77,7 +76,8 @@ export const title = styled.h3`
 
     & span {
         color: ${p => p.theme.button};
-        text-shadow: 1px 0px 2px ${p => p.theme.button};
+        text-shadow: none;
+        
     }
 `;
 
@@ -95,7 +95,7 @@ export const link = styled.a`
     text-decoration: none;
     transition: 0.1s linear;
     padding: 0 5px;
-    
+
     &:hover {
         text-decoration: underline;
         color: ${p => p.theme.button};

@@ -1,10 +1,94 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import App from 'next/app';
-import { ThemeProvider as ContextThemeProvider } from '../src/contexts/ThemeContext';
+import { ThemeProvider as ContextThemeProvider, ThemeContext } from '../src/contexts/ThemeContext';
 import { LanguageProvider } from '../src/contexts/LanguageContext';
-import Background from '../src/components/Background/Background';
+import { GlobalStyle } from '../src/components/Theme.style';
+import { ThemeProvider } from 'styled-components';
+import ThemeSwitch from '../src/components/ThemeSwitch/ThemeSwitch';
+import Footer from '../src/components/Footer/Footer';
+import Overlay from '../src/components/Overlay/Overlay';
+import Particles from 'react-particles-js';
+
 // import { GlobalStyle, theme } from '../src/components/Theme.style';
 // import { ThemeProvider } from 'styled-components';
+
+const Theme = (props: { children: any }) => {
+    const { theme } = useContext(ThemeContext);
+    return (
+        <>
+            <ThemeProvider theme={theme}>
+                <>
+                    <GlobalStyle />
+                    {props.children}
+                </>
+            </ThemeProvider>
+        </>
+    );
+};
+
+const ParticleBackground = () => {
+    const { isDark } = useContext(ThemeContext);
+    return (
+        <>
+                    {isDark && (
+                        <Particles style={{position: 'absolute'}}
+                            params={{
+                                particles: {
+                                    number: {
+                                        value: 100,
+                                        density: {
+                                            enable: true,
+                                            value_area: 1500,
+                                        },
+                                    },
+                                    line_linked: {
+                                        enable: false,
+                                        opacity: 0.02,
+                                    },
+                                    color: {
+                                        value: '#ffd803',
+                                    },
+                                    move: {
+                                        direction: 'right',
+                                        speed: 0.05,
+                                    },
+                                    size: {
+                                        value: 1,
+                                        random: true,
+                                    },
+                                    opacity: {
+                                        anim: {
+                                            enable: true,
+                                            speed: 1,
+                                            opacity_min: 0.05,
+                                        },
+                                    },
+                                },
+                                interactivity: {
+                                    events: {
+                                        onclick: {
+                                            enable: true,
+                                            mode: 'push',
+                                        },
+                                        onhover: {
+                                            enable: true,
+                                            mode: 'repulse',
+                                        },
+                                    },
+                                    modes: {
+                                        push: {
+                                            particles_nb: 1,
+                                        },
+                                    },
+                                },
+                                retina_detect: true,
+                            }}
+                        />
+                    )}
+          </>
+    );
+
+}
 
 class MyApp extends App {
     // Only uncomment this method if you have blocking data requirements for
@@ -26,9 +110,16 @@ class MyApp extends App {
             <>
                 <ContextThemeProvider>
                     <LanguageProvider>
-                        <>
-                            <Component {...pageProps} />
-                        </>
+                        <Theme>
+                            <>
+                                <ThemeSwitch />
+                                <ParticleBackground/>
+                                <Overlay>
+                                    <Component {...pageProps} />
+                                </Overlay>
+                                <Footer />
+                            </>
+                        </Theme>
                     </LanguageProvider>
                 </ContextThemeProvider>
             </>

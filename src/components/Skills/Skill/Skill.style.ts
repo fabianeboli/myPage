@@ -1,20 +1,23 @@
 import styled from 'styled-components';
 
 export const container = styled.div`
-    flex-basis: 33.33333%;
-    flex-grow: 1;
+    /* flex-basis: 33.33333%;
+    flex-grow: 1; */
     text-align: center;
     position: relative;
+    flex: 1 calc(2.0em + 4.0vw);
+    align-self: center;
+    height: auto;
 `;
 
 export const skillLogo = styled.img`
     max-width: calc(2.5em + 3.5vw);
     max-height: calc(2.5em + 3.5vh);
-    padding: 5px;
+    padding: 7px 5px;
     fill: currentColor;
     color: red;
     /* width: 100%; */
-    /* margin: calc(0.1em + 0.2vw); */
+    margin: calc(0.1em + 0.2vw);
 `;
 
 export const popup = styled.p`

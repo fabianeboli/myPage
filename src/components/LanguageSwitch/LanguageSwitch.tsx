@@ -1,7 +1,7 @@
 import React from 'react';
-import gb from '../../images/Flags/gb.svg';
-import it from '../../images/Flags/it.svg';
-import pl from '../../images/Flags/pl.svg';
+import gb from '../../../public/images/Flags/gb.svg';
+import it from '../../../public/images/Flags/it.svg';
+import pl from '../../../public/images/Flags/pl.svg';
 import * as S from './LanguageSwitch.style';
 import { LanguageContext, LangTypes } from '../../contexts/LanguageContext';
 import { useContext } from 'react';

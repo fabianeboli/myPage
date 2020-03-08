@@ -9,71 +9,71 @@ import {words } from '../../Language/words';
 const skillsList: ISkill[] = [
     {
         name: 'HTML5',
-        image: require('../../images/Skills/html-5-logo-svg-vector.svg?include'),
+        image: require('../../../public/images/Skills/html-5-logo-svg-vector.svg'),
     },
     {
         name: 'CSS3',
-        image: require('../../images/Skills/css-3-logo-svg-vector.svg?include'),
+        image: require('../../../public/images/Skills/css-3-logo-svg-vector.svg?include'),
     },
     {
         name: 'Javascript',
-        image: require('../../images/Skills/javascript-logo-svg-vector.svg?include'),
+        image: require('../../../public/images/Skills/javascript-logo-svg-vector.svg?include'),
     },
     {
         name: 'Typescript',
-        image: require('../../images/Skills/typescript-seeklogo.com.svg'),
+        image: require('../../../public/images/Skills/typescript-seeklogo.com.svg'),
     },
     {
         name: 'React',
-        image: require('../../images/Skills/react-1-logo-svg-vector.svg'),
+        image: require('../../../public/images/Skills/react-1-logo-svg-vector.svg'),
     },
     {
         name: 'Jest',
-        image: require('../../images/Skills/jest-logo-svg-vector.svg'),
+        image: require('../../../public/images/Skills/jest-logo-svg-vector.svg'),
     },
     {
         name: 'Sass',
-        image: require('../../images/Skills/sass-1-logo-svg-vector.svg'),
+        image: require('../../../public/images/Skills/sass-1-logo-svg-vector.svg'),
     },
     {
         name: 'Styled-components',
-        image: require('../../images/Skills/styled-components.png'),
+        image: require('../../../public/images/Skills/styled-components.png'),
     },
     {
         name: 'Node',
-        image: require('../../images/Skills/nodejs-seeklogo.com.svg'),
+        image: require('../../../public/images/Skills/nodejs-seeklogo.com.svg'),
     },
     {
         name: 'Express',
-        image: require('../../images/Skills/express-js-seeklogo.com.svg'),
+        image: require('../../../public/images/Skills/express-js-seeklogo.com.svg'),
     },
     {
         name: 'MongoDB',
-        image: require('../../images/Skills/mongodb-logo-svg-vector.svg'),
+        image: require('../../../public/images/Skills/mongodb-logo-svg-vector.svg'),
     },
     {
         name: 'PostgreSQL',
-        image: require('../../images/Skills/PostgreSQL_logo.3colors.svg'),
+        image: require('../../../public/images/Skills/PostgreSQL_logo.3colors.svg'),
     },
     {
         name: 'SQL Server',
-        image: require('../../images/Skills/microsoft-sql-server-logo-svg-vector.svg'),
+        image: require('../../../public/images/Skills/microsoft-sql-server-logo-svg-vector.svg'),
     },
     {
         name: 'Python',
-        image: require('../../images/Skills/python-5-logo-svg-vector.svg'),
+        image: require('../../../public/images/Skills/python-5-logo-svg-vector.svg'),
     },
     {
         name: 'Java',
-        image: require('../../images/Skills/java-4-logo-svg-vector.svg'),
+        image: require('../../../public/images/Skills/java-4-logo-svg-vector.svg'),
     },
     {
         name: 'Kotlin',
-        image: require('../../images/Skills/kotlin-1-logo-svg-vector.svg'),
+        image: require('../../../public/images/Skills/kotlin-1-logo-svg-vector.svg'),
     },
     {
         name: 'C#',
-        image: require('../../images/Skills/external-content.duckduckgo.com.png'),
+        image: require('../../../public/images/Skills/external-content.duckduckgo.com.png'),
     },
 ];
 
@@ -87,8 +87,9 @@ const Skills: React.FC = () => {
     const skillsList: JSX.Element[] = presentSkills();
     return (
         <S.container>
-            <legend id="Skills">{skills}</legend>
+            <S.title id="Skills">{skills}</S.title>
                 {skillsList}
+           
         </S.container>
     );
 };

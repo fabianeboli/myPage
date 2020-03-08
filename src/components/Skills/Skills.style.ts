@@ -1,33 +1,27 @@
 import styled from 'styled-components';
 
-export const container = styled.fieldset`
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+export const container = styled.div`
+    display: grid;
+    /* flex-wrap: wrap;  */
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 2vh repeat(2, 1fr);
+    justify-items: center;
     align-content: center;
-    align-items: center;
-    align-self: center;
-    /* border-radius: 35px; */
-    /* border: 3px solid ${p => p.theme.headline}; */
-    border: none;
     box-shadow: ${p => p.theme.cardShadow};
     margin: 10vh 5%;
     top: 10%;
 
-    & legend {
-        color: ${p => p.theme.headline};
-        margin: 1% auto;
-        font-size: calc(2em + 0.5vw);
-    }
-
-    & div {
-        flex: 1 calc(2.0em + 4.0vw);
-        min-width: 0;
-        
-    }
-
     @media only screen and (min-width: ${p => p.theme.nonMobilePx}) {
         right: 1%;
-
     }
+`;
+
+export const title = styled.div`
+    grid-area: 1 / 1 / 1 / 7;
+    margin: 0 auto;
+    position: relative;
+    bottom: 30px;
+    color: ${p => p.theme.headline};
+    font-size: calc(2em + 0.5vw);
+    flex: 10 50% 50%;
 `;

@@ -2,7 +2,7 @@ import React from 'react';
 import * as S from './Header.style';
 import Skills from '../Skills/Skills';
 import ScrollButton from '../ScrollButton/ScrollButton';
-import backgroundImage from '../../images/Header/Workspace_2_SVG.svg';
+import backgroundImage from '../../../public/images/Header/Workspace_2_SVG.svg';
 const Header = () => {
     return (
         <>
