@@ -9,9 +9,6 @@ import Footer from '../src/components/Footer/Footer';
 import Overlay from '../src/components/Overlay/Overlay';
 import Particles from 'react-particles-js';
 
-// import { GlobalStyle, theme } from '../src/components/Theme.style';
-// import { ThemeProvider } from 'styled-components';
-
 const Theme = (props: { children: any }) => {
     const { theme } = useContext(ThemeContext);
     return (

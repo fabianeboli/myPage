@@ -1,10 +1,8 @@
-# TypeScript & Styled Components Next.js example
+# My portfolio website created with Next.js
 
-This is a really simple project that show the usage of Next.js with TypeScript and Styled Components.
 
 ## Deploy your own
 
-Deploy the example using [ZEIT Now](https://zeit.co/now):
 
 [![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/new/project?template=https://github.com/zeit/next.js/tree/canary/examples/with-typescript-styled-components)
 

@@ -17,7 +17,6 @@ const hangAnimation = keyframes`
 }
  `;
 
-
 export const link = styled.a`
     break-after: always;
     width: 100%;
@@ -25,8 +24,6 @@ export const link = styled.a`
     outline: none;
 
 `
-
-
 export const ArrowIcon = styled(ArrowWithCircleDown)`
     color: ${p => p.theme.button};
     position: relative;

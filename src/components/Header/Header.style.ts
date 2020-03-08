@@ -28,8 +28,7 @@ export const headerContainer = styled.div`
 `
 
 export const backgroundContainer = styled.div`
-    /* position: relative; */
-    /* left: 1.0vw; */
+   
 `
 
 export const backgroundImage = styled.img`
@@ -45,11 +44,8 @@ export const backgroundImage = styled.img`
 `
 
 export const showcaseContainer = styled.div`
-    
     text-align: center;
-    font-family: 'Lato', sans-serif;
-    /* margin: 15% auto; */
-    /* max-width: 25vw; */
+    font-family: 'Lato', sans-serif; 
     font-size: calc(1.1em + 1.35vw);
     bottom: 9%;
 

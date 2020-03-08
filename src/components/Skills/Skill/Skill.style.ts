@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 
 export const container = styled.div`
-    /* flex-basis: 33.33333%;
-    flex-grow: 1; */
     text-align: center;
     position: relative;
     flex: 1 calc(2.0em + 4.0vw);
@@ -16,7 +14,6 @@ export const skillLogo = styled.img`
     padding: 7px 5px;
     fill: currentColor;
     color: red;
-    /* width: 100%; */
     margin: calc(0.1em + 0.2vw);
 `;
 

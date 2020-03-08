@@ -1,6 +1,6 @@
-import React, { useState, useContext } from 'react';
+import React, { useContext } from 'react';
 import * as S from './ThemeSwitch.style';
-import { ThemeContext, ColorPallette, themesList } from '../../contexts/ThemeContext';
+import { ThemeContext, themesList } from '../../contexts/ThemeContext';
 
 const ThemeSwitch = () => {
     const {changeTheme, isDark, changeIsDark } = useContext(ThemeContext);

@@ -1,8 +1,6 @@
-import { theme } from './../Theme.style';
-import styled, { StyledComponent } from 'styled-components';
+import styled   from 'styled-components';
 import { LightBulb as faLightBulbOff } from 'styled-icons/octicons/LightBulb';
 import { Lightbulb as faLightBulbOn } from 'styled-icons/fa-solid/Lightbulb';
-import { StyledIcon } from 'styled-icons/types';
 
 const lightBulb = `
     transform: rotate(180deg);

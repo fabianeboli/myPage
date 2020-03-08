@@ -76,6 +76,12 @@ const Projects = () => {
         //   description:  projectDescription.facebookClone,
         //   url: "https://vatpit.herokuapp.com/"
         // },
+        // {
+        //     name: "MineSweeper made with Ionic react",
+        //     image: "",
+        //     description: '',
+        //     url: ''
+        // }
     ];
 
 

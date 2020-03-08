@@ -8,7 +8,6 @@ const ScrollButton = () => {
     <>
                 
         <S.link href="#Skills"><ArrowIcon size='68'/></S.link>
-        {/* <p>My Projects!</p> */}
     </>
     )
 };

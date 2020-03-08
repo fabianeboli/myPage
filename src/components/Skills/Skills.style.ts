@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const container = styled.div`
     display: grid;
-    /* flex-wrap: wrap;  */
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: 2vh repeat(2, 1fr);
     justify-items: center;

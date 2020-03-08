@@ -29,13 +29,11 @@ export const button = styled.button`
     color: ${p => p.theme.buttonText};
     background-image: ${p => p.theme.gradientButton};
     border: none;
-    font-weight: bold;
     margin: 0.375em;
     transition: 0.3s ease;
     box-shadow: 0 4px 5px 0 ${p => p.theme.buttonShadow};
     transition: all 0.4s ease-in-out;
-
-
+ 
     &:hover {
         background-position: 100% 0;
         box-shadow: 0px 2px 8px 2px ${p => p.theme.buttonShadow};

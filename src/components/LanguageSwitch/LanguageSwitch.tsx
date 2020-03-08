@@ -20,7 +20,6 @@ const LanguageSwitch = () => {
                 <S.flags>
                     <img onClick={() => handleLanguageChange(LangTypes.english)} src={gb} />
                     <img onClick={() => handleLanguageChange(LangTypes.polish)} src={pl} />
-                    {/* <img src={it} /> */}
                 </S.flags>
             </S.inner>
         </S.container>
