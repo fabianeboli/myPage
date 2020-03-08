@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import App from 'next/app';
 import { ThemeProvider as ContextThemeProvider, ThemeContext } from '../src/contexts/ThemeContext';
 import { LanguageProvider } from '../src/contexts/LanguageContext';
@@ -8,6 +8,7 @@ import ThemeSwitch from '../src/components/ThemeSwitch/ThemeSwitch';
 import Footer from '../src/components/Footer/Footer';
 import Overlay from '../src/components/Overlay/Overlay';
 import Particles from 'react-particles-js';
+import Loader from '../src/components/Loader/Loader';
 
 const Theme = (props: { children: any }) => {
     const { theme } = useContext(ThemeContext);
@@ -27,66 +28,85 @@ const ParticleBackground = () => {
     const { isDark } = useContext(ThemeContext);
     return (
         <>
-                    {isDark && (
-                        <Particles style={{position: 'absolute'}}
-                            params={{
-                                particles: {
-                                    number: {
-                                        value: 100,
-                                        density: {
-                                            enable: true,
-                                            value_area: 1500,
-                                        },
-                                    },
-                                    line_linked: {
-                                        enable: false,
-                                        opacity: 0.02,
-                                    },
-                                    color: {
-                                        value: '#ffd803',
-                                    },
-                                    move: {
-                                        direction: 'right',
-                                        speed: 0.05,
-                                    },
-                                    size: {
-                                        value: 1,
-                                        random: true,
-                                    },
-                                    opacity: {
-                                        anim: {
-                                            enable: true,
-                                            speed: 1,
-                                            opacity_min: 0.05,
-                                        },
-                                    },
+            {isDark && (
+                <Particles
+                    style={{ position: 'absolute' }}
+                    params={{
+                        particles: {
+                            number: {
+                                value: 100,
+                                density: {
+                                    enable: true,
+                                    value_area: 1500,
                                 },
-                                interactivity: {
-                                    events: {
-                                        onclick: {
-                                            enable: true,
-                                            mode: 'push',
-                                        },
-                                        onhover: {
-                                            enable: true,
-                                            mode: 'repulse',
-                                        },
-                                    },
-                                    modes: {
-                                        push: {
-                                            particles_nb: 1,
-                                        },
-                                    },
+                            },
+                            line_linked: {
+                                enable: false,
+                                opacity: 0.02,
+                            },
+                            color: {
+                                value: '#ffd803',
+                            },
+                            move: {
+                                direction: 'right',
+                                speed: 0.05,
+                            },
+                            size: {
+                                value: 1,
+                                random: true,
+                            },
+                            opacity: {
+                                anim: {
+                                    enable: true,
+                                    speed: 1,
+                                    opacity_min: 0.05,
                                 },
-                                retina_detect: true,
-                            }}
-                        />
-                    )}
-          </>
+                            },
+                        },
+                        interactivity: {
+                            events: {
+                                onclick: {
+                                    enable: true,
+                                    mode: 'push',
+                                },
+                                onhover: {
+                                    enable: true,
+                                    mode: 'repulse',
+                                },
+                            },
+                            modes: {
+                                push: {
+                                    particles_nb: 1,
+                                },
+                            },
+                        },
+                        retina_detect: true,
+                    }}
+                />
+            )}
+        </>
     );
-
-}
-
+};
+const Main = (props: { children: any }) => {
+    const [isLoading, setIsLoading] = useState<boolean>(true);
+      return (
+        <>
+            <ContextThemeProvider>
+                <LanguageProvider>
+                    <Theme>
+                        <>
+                            <ThemeSwitch />
+                            <ParticleBackground />
+                            <Overlay>{props.children}</Overlay>
+                            <Footer />
+                        </>
+                    </Theme>
+                </LanguageProvider>
+            </ContextThemeProvider>
+          
+        </>
+    );
+};
 class MyApp extends App {
     // Only uncomment this method if you have blocking data requirements for
     // every single page in your application. This disables the ability to
@@ -105,20 +125,9 @@ class MyApp extends App {
 
         return (
             <>
-                <ContextThemeProvider>
-                    <LanguageProvider>
-                        <Theme>
-                            <>
-                                <ThemeSwitch />
-                                <ParticleBackground/>
-                                <Overlay>
-                                    <Component {...pageProps} />
-                                </Overlay>
-                                <Footer />
-                            </>
-                        </Theme>
-                    </LanguageProvider>
-                </ContextThemeProvider>
+                <Main>
+                    <Component {...pageProps} />
+                </Main>
             </>
         );
     }

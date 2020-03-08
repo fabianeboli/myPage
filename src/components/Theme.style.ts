@@ -126,7 +126,7 @@ export const GlobalStyle = createGlobalStyle`
        /* @import url('https://fonts.googleapis.com/css?family=Lato:400,700|Noto+Sans:400&display=swap'); */
 
     html, body {
-        width: 100vw;
+        width: 95vw;
         height: 100vh;
         font-family: 'Noto Sans', sans-serif; 
         background: #000428;  /* fallback for old browsers */
@@ -138,7 +138,6 @@ export const GlobalStyle = createGlobalStyle`
         scroll-behavior: smooth;
         margin: 0;
         scrollbar-color: #0c7d9d #0c7d9d55;
-        overflow-x: hidden;
     }
 
 `;
