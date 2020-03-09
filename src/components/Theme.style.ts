@@ -138,6 +138,7 @@ export const GlobalStyle = createGlobalStyle`
         scroll-behavior: smooth;
         margin: 0;
         scrollbar-color: #0c7d9d #0c7d9d55;
+		margin: 0 auto;
     }
 
 `;

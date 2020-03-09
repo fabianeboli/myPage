@@ -1,53 +1,33 @@
-import styled, { keyframes }  from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+import { Spinner9 } from '@styled-icons/icomoon/Spinner9';
 
 const animationWave = keyframes`
- 0% {    
-    width: 0;
-    height: 0;
-    opacity: 1;
+  from {
+    transform: rotate(0deg);
   }
-  100% {
-    top: 0%;
-    left: 0%;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
+  to {
+    transform: rotate(359deg);
   }
+`;
 
-`
+export const loadingIcon = styled(Spinner9)`
+    margin: 0 auto;
+    width: 25vw;
+    height: 25vh;
+    left: 50%;
+    top: 50%;
+    animation: ${animationWave} 4s linear infinite;
+    color: #004e92;
+ 
+
+`;
 
 export const wrapper = styled.div`
-  width:100%;
-  display:flex;
-  background: #005566;
-  min-height:100vh;
-  align-items: center;
+    width: 99.11vw;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    background-color: #000428;
+   
+`;
 
-`
-
-export const wave = styled.div`
-  display: block;
-  position: absolute;
-  width: 70px;
-  height: 70px;
-  left:50%; 
-  top:50%; 
-  transform: translate(-50%, - 50%);
-  overflow: visible;
-
-  &::before &::after {
-    position: absolute;
-  content: '';
-  border: 4px solid #fff;
-  opacity: 1;
-  border-radius: 50%;
-  left:50%; 
-  top:50%; 
-  transform: translate(-55%, - 55%);
-  animation: ${animationWave} 1.2s cubic-bezier(0, 0.2, 0.8, 1) infinite;
-  }
-
-  &::after {
-    animation-delay: -0.4s;
-  }
-`

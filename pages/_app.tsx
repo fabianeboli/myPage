@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext } from 'react';
 import App from 'next/app';
 import { ThemeProvider as ContextThemeProvider, ThemeContext } from '../src/contexts/ThemeContext';
 import { LanguageProvider } from '../src/contexts/LanguageContext';
@@ -8,7 +8,8 @@ import ThemeSwitch from '../src/components/ThemeSwitch/ThemeSwitch';
 import Footer from '../src/components/Footer/Footer';
 import Overlay from '../src/components/Overlay/Overlay';
 import Particles from 'react-particles-js';
-import  Head  from 'next/head';
+import Head from 'next/head';
+import Loader from '../src/components/Loader/Loader';
 
 const Theme = (props: { children: any }) => {
     const { theme } = useContext(ThemeContext);
@@ -88,8 +89,7 @@ const ParticleBackground = () => {
     );
 };
 const Main = (props: { children: any }) => {
-    const [isLoading, setIsLoading] = useState<boolean>(true);
-      return (
+    return (
         <>
             <ContextThemeProvider>
                 <LanguageProvider>
@@ -103,10 +103,10 @@ const Main = (props: { children: any }) => {
                     </Theme>
                 </LanguageProvider>
             </ContextThemeProvider>
-          
         </>
     );
 };
+
 class MyApp extends App {
     // Only uncomment this method if you have blocking data requirements for
     // every single page in your application. This disables the ability to
@@ -119,18 +119,27 @@ class MyApp extends App {
     //
     //   return { ...appProps }
     // }
+    // state = { loading: true };
+
+    // componentDidMount() {
+    //     this.setState({loading: false})
+    // }
 
     render() {
         const { Component, pageProps } = this.props;
 
+        const main = (
+            <Main>
+                <Head>
+                    <title>Fabian Eboli - my Website</title>
+                </Head>
+                <Component {...pageProps} />
+            </Main>
+        );
+
         return (
             <>
-                <Main>
-            <Head>
-            <title>Fabian Eboli - my Website</title>
-            </Head>
-                    <Component {...pageProps} />
-                </Main>
+               {main}
             </>
         );
     }
