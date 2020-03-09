@@ -18,8 +18,8 @@ const LanguageSwitch = () => {
                     <S.languageIcon size="26" />
                 </span>
                 <S.flags>
-                    <img onClick={() => handleLanguageChange(LangTypes.english)} src={gb} />
-                    <img onClick={() => handleLanguageChange(LangTypes.polish)} src={pl} />
+                    <S.flag onClick={() => handleLanguageChange(LangTypes.english)} src={gb} />
+                    <S.flag onClick={() => handleLanguageChange(LangTypes.polish)} src={pl} />
                 </S.flags>
             </S.inner>
         </S.container>

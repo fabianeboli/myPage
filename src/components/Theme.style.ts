@@ -34,7 +34,7 @@ export const darkTheme: DefaultTheme = {
     cardShadow: ` 0px 2px 1px -1px rgba(0,0,0,1),
     0px 1px 1px 0px rgba(0,0,0,0.94),
     0px 1px 3px 0px rgba(0,0,0,0.92);`,
-    backgroundSize: `150% 150%`,
+    backgroundSize: `175% 175%`,
 };
 
 const wave = keyframes`
@@ -126,8 +126,7 @@ export const GlobalStyle = createGlobalStyle`
        /* @import url('https://fonts.googleapis.com/css?family=Lato:400,700|Noto+Sans:400&display=swap'); */
 
     html, body {
-        width: 99.11vw;
-        height: 100vh;
+        width: 100vw;
         font-family: 'Noto Sans', sans-serif; 
         background: #000428;  /* fallback for old browsers */
         background-image: ${p => p.theme.gradient};
@@ -136,9 +135,9 @@ export const GlobalStyle = createGlobalStyle`
         background-position: center;
         animation: ${wave} 25s ease-out infinite;
         scroll-behavior: smooth;
-        margin: 0;
         scrollbar-color: #0c7d9d #0c7d9d55;
 		margin: 0 auto;
+		overflow-x: hidden;
     }
 
 `;
