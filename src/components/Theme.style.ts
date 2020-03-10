@@ -126,6 +126,7 @@ export const GlobalStyle = createGlobalStyle`
        /* @import url('https://fonts.googleapis.com/css?family=Lato:400,700|Noto+Sans:400&display=swap'); */
 
     html, body {
+		box-sizing: border-box;
         width: 100vw;
         font-family: 'Noto Sans', sans-serif; 
         background: #000428;  /* fallback for old browsers */
@@ -133,11 +134,14 @@ export const GlobalStyle = createGlobalStyle`
         background-size: ${p => p.theme.backgroundSize};
         background-attachment: fixed;
         background-position: center;
-        animation: ${wave} 25s ease-out infinite;
         scroll-behavior: smooth;
         scrollbar-color: #0c7d9d #0c7d9d55;
 		margin: 0 auto;
 		overflow-x: hidden;
+		
+		@media only screen and (min-width: ${p => p.theme.nonMobilePx}) {
+        	animation: ${wave} 25s ease-out infinite;
+		}
     }
 
 `;

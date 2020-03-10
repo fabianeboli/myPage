@@ -3,18 +3,16 @@ import styled from 'styled-components';
 export const container = styled.div`
     text-align: center;
     position: relative;
-    flex: 1 calc(2.0em + 4.0vw);
     align-self: center;
     height: auto;
+    
 `;
 
 export const skillLogo = styled.img`
-    max-width: calc(2.5em + 3.5vw);
-    max-height: calc(2.5em + 3.5vh);
-    padding: 7px 5px;
-    fill: currentColor;
+    max-width: calc(2.2em + 3.7vw);
+    max-height: calc(2.2em + 3.7vh);
     color: red;
-    margin: calc(0.1em + 0.2vw);
+    margin: 0.1vw;
 `;
 
 export const popup = styled.p`
