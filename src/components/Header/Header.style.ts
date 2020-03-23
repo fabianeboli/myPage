@@ -11,12 +11,10 @@ export const container = styled.div`
     text-shadow: 2px 2px 1px ${p => p.theme.shadow};
     padding: 3vh 0 10vh 0;
     background-size: cover;
-    
 
     @media only screen and (min-width: ${p => p.theme.nonMobilePx}) {
         flex-direction: row;
         justify-content: space-around;
-        
     }
 `;
 
@@ -25,11 +23,9 @@ export const headerContainer = styled.div`
     align-content: center;
     align-items: center;
     justify-content: center;
-`
+`;
 
-export const backgroundContainer = styled.div`
-   
-`
+export const backgroundContainer = styled.div``;
 
 export const backgroundImage = styled.img`
     z-index: -1;
@@ -37,15 +33,15 @@ export const backgroundImage = styled.img`
     width: 0vw;
     background-size: contain;
     height: auto;
-
+    background: #ffffff00;
     @media only screen and (min-width: ${p => p.theme.nonMobilePx}) {
-        width: 35vw;    
-    } 
-`
+        width: 35vw;
+    }
+`;
 
 export const showcaseContainer = styled.div`
     text-align: center;
-    font-family: 'Lato', sans-serif; 
+    font-family: 'Lato', sans-serif;
     font-size: calc(1.1em + 1.35vw);
     bottom: 9%;
 
@@ -73,7 +69,6 @@ export const title = styled.h3`
     & span {
         color: ${p => p.theme.button};
         text-shadow: none;
-        
     }
 `;
 

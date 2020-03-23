@@ -49,6 +49,15 @@ const wave = keyframes`
     }
 `;
 
+const fadeIn = keyframes`
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+`;
+
 export const GlobalStyle = createGlobalStyle`
 @font-face {
 	font-family: 'Lato';
@@ -138,11 +147,15 @@ export const GlobalStyle = createGlobalStyle`
         scrollbar-color: #0c7d9d #0c7d9d55;
 		margin: 0 auto;
 		overflow-x: hidden;
-		
+		animation: ${fadeIn} 0.25s ease-in;
+	
 		@media only screen and (min-width: ${p => p.theme.nonMobilePx}) {
-        	animation: ${wave} 25s ease-out infinite;
+        	/* animation: ${wave} 25s ease-out infinite; */
 		}
     }
+
+	header {
+	}
 
 `;
 
