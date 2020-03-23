@@ -131,7 +131,7 @@ class MyApp extends App {
         const main = (
             <Main>
                 <Head>
-                    <title>Fabian Eboli - my Website</title>
+                    <title>Fabian Eboli - portfolio</title>
                 </Head>
                 <Component {...pageProps} />
             </Main>
