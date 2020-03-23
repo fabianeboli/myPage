@@ -15,6 +15,7 @@ export const words = {
             hangman: `An implementation of Hangman game. Player crosses letters in an attempt to reveal the hidden word. Player has a set number of trials. If the wastes them, the game is lost.`,
             memoryGame: `An implementation of Memory card game. Player is trying a pair of same looking cards`,
             pixelArtGame: `A game where the player selects two colors and size of the grid. After that player can colorize the grid.`,
+            secretClub: `A message board website where members which knows a password have access to special features.`
         },
         liveVersion: `Live Version`,
         footer: `@Copyright 2020 All Rights Reserved`,
@@ -33,6 +34,7 @@ export const words = {
             hangman: `Wdrożenie wisielca. Gracz stara się odgadnąć ukryte słowo poprzez skreślenie liter. Gracz ma limitowaną ilość życ.`,
             memoryGame: `Gra pamięciowa, w której gracz próbuje znaleźć parę kart.`,
             pixelArtGame: `Gra, w której gracz wybiera dwa kolory oraz rozmiar siatki, poczym gracz może ubarwić siatkę.`,
+            secretClub: `Forum dyskusyjne, w którym członkowie znający hasło mają dostęp do specjalnych funkcji.`
         },
         liveVersion: `Przykład`,
         footer: `@Copyright 2020 Wszelkie prawa zastrzeżone`,

@@ -9,10 +9,11 @@ export const container = styled.div`
     align-content: baseline;
     align-items: center;
 	box-shadow: ${p => p.theme.cardShadow};
-    flex-grow: 1;
+    flex-grow: 0.1;
     flex-basis: 25%;
     line-height: 1.6;
     text-align: center;
+    
 `;
 
 export const buttonContainer = styled.div`

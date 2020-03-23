@@ -6,8 +6,6 @@ import { LanguageContext } from '../../contexts/LanguageContext';
 import { useContext } from 'react';
 import { words } from '../../Language/words';
 
-
-
 const Projects = () => {
     const { language } = useContext(LanguageContext);
     const { projectDescription } = words[language];
@@ -66,6 +64,12 @@ const Projects = () => {
             description: projectDescription.pixelArtGame,
             url: 'https://codesandbox.io/s/dice-poker-2wks7',
         },
+        {
+            name: 'Secret Club',
+            image: require('../../../public/images/Projects/SecretClub.png'),
+            description: projectDescription.secretClub,
+            url: 'https://codesandbox.io/s/secret-club-frp4c',
+        },
         //   { name: "Nbus.pl",
         //     image: "../../public/Projects/VatPit.png",
         //     description:  projectDescription.nbuspl,
@@ -83,7 +87,6 @@ const Projects = () => {
         //     url: ''
         // }
     ];
-
 
     const presentProjects = () =>
         ProjectsList.map(project => {
