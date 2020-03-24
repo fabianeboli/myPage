@@ -62,14 +62,15 @@ export const nameContainer = styled.div`
 export const name = styled.h1`
     margin: 2% auto;
 `;
-export const title = styled.h3`
-    font-family: 'Lato', sans-serif;
+export const profession = styled.h3`
+    font-family: 'Lato Bold', sans-serif;
     margin: 2% auto;
-
-    & span {
-        color: ${p => p.theme.button};
-        text-shadow: none;
-    }
+    color: ${p => p.theme.button};
+    text-shadow: none;
+     background: ${p => p.theme.gradientProfession};
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 `;
 
 export const contact = styled.h4`

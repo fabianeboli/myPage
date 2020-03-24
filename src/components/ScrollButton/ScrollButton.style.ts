@@ -1,6 +1,6 @@
+// import { ArrowWithCircleUp } from '@styled-icons/entypo/ArrowWithCircleUp';
 import styled, { keyframes } from 'styled-components';
 import { ArrowWithCircleDown } from 'styled-icons/entypo/ArrowWithCircleDown';
-
 const hangAnimation = keyframes`
    10% {
     -webkit-transform: translateY(2px);
@@ -22,8 +22,8 @@ export const link = styled.a`
     width: 100%;
     text-align: center;
     outline: none;
+`;
 
-`
 export const ArrowIcon = styled(ArrowWithCircleDown)`
     color: ${p => p.theme.button};
     position: relative;
@@ -41,3 +41,20 @@ export const ArrowIcon = styled(ArrowWithCircleDown)`
         top: 5vh !important;
     }
 `;
+
+// export const ArrowIconUp = styled(ArrowWithCircleUp)`
+//    color: ${p => p.theme.button};
+//     opacity: 0.5;
+//     border: transparent;
+//     transition: opacity 0.7s;
+//     position: relative;
+//     &:hover {
+//         cursor: pointer;
+//         animation: ${hangAnimation} 1s ease-in infinite;
+//         opacity: 1;
+//     }
+
+//     @media only screen and (min-width: ${p => p.theme.nonMobilePx}) {
+//         top: 5vh !important;
+//     } 
+// `

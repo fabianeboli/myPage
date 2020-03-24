@@ -10,7 +10,8 @@ export const theme: DefaultTheme = {
     shadow: '#ccc',
     gradient: `linear-gradient(to bottom right, #004e9250, #000428aa), url('${backgroundImg}')`,
     gradientButton: 'linear-gradient(to right, #005566, #3c9f72, #55a970, #006a70)',
-    buttonShadow: '#008074aa',
+	gradientProfession: `linear-gradient(to bottom right, #ffd803,#55a970 50%, #005566 90% )`,
+	buttonShadow: '#008074aa',
     overlayGradientBackground: 'linear-gradient(to bottom, #004e92,#fffffe);',
     nonMobilePx: '1025px',
     cardShadow: ` 0px 2px 1px -1px rgba(0,0,0,0.2),
@@ -28,7 +29,8 @@ export const darkTheme: DefaultTheme = {
     shadow: '#222',
     gradient: `linear-gradient(to bottom right, #2b587677, #4e4376aa)`,
     gradientButton: 'linear-gradient(to right, #0ba360, #3cba92, #30dd8a, #2bb673)',
-    buttonShadow: 'rgba(23, 168, 108, 0.75)',
+	gradientProfession: `linear-gradient(to bottom right, #ffd803, #55a970)`,
+	buttonShadow: 'rgba(23, 168, 108, 0.75)',
     overlayGradientBackground: 'linear-gradient(to bottom, #004e92,#fffffe);',
     nonMobilePx: '1025px',
     cardShadow: ` 0px 2px 1px -1px rgba(0,0,0,1),
@@ -147,10 +149,10 @@ export const GlobalStyle = createGlobalStyle`
         scrollbar-color: #0c7d9d #0c7d9d55;
 		margin: 0 auto;
 		overflow-x: hidden;
-		animation: ${fadeIn} 0.25s ease-in;
+		animation: ${fadeIn} 1s ease-in;
 	
 		@media only screen and (min-width: ${p => p.theme.nonMobilePx}) {
-        	/* animation: ${wave} 25s ease-out infinite; */
+        	animation: ${fadeIn} 0.75s ease-in, ${wave} 25s ease-out infinite;
 		}
     }
 

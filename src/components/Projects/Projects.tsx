@@ -5,6 +5,7 @@ import * as S from './Projects.style';
 import { LanguageContext } from '../../contexts/LanguageContext';
 import { useContext } from 'react';
 import { words } from '../../Language/words';
+import ScrollButton from '../ScrollButton/ScrollButton';
 
 const Projects = () => {
     const { language } = useContext(LanguageContext);
@@ -98,10 +99,14 @@ const Projects = () => {
                     description={project.description}
                     url={project.url}
                 />
+               
             );
         });
-
-    return <S.projectList id="Projects">{presentProjects()}</S.projectList>;
+    return (
+        <>
+        <S.projectList id="Projects">{presentProjects()}</S.projectList> 
+        </>
+    ) 
 };
 
 export default Projects;
