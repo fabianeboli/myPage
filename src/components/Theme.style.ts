@@ -152,7 +152,7 @@ export const GlobalStyle = createGlobalStyle`
 		animation: ${fadeIn} 1s ease-in;
 	
 		@media only screen and (min-width: ${p => p.theme.nonMobilePx}) {
-        	animation: ${fadeIn} 0.75s ease-in, ${wave} 25s ease-out infinite;
+        	animation: ${fadeIn} 1s ease-in, ${wave} 25s ease-out infinite;
 		}
     }
 
