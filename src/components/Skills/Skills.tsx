@@ -13,11 +13,11 @@ const skillsList: ISkill[] = [
     },
     {
         name: 'CSS3',
-        image: require('../../../public/images/Skills/css-3-logo-svg-vector.svg?include'),
+        image: require('../../../public/images/Skills/css-3-logo-svg-vector.svg'),
     },
     {
         name: 'Javascript',
-        image: require('../../../public/images/Skills/javascript-logo-svg-vector.svg?include'),
+        image: require('../../../public/images/Skills/javascript-logo-svg-vector.svg'),
     },
     {
         name: 'Typescript',
@@ -73,7 +73,7 @@ const skillsList: ISkill[] = [
     },
     {
         name: 'C#',
-        image: require('../../../public/images/Skills/external-content.duckduckgo.com.png'),
+        image: require('../../../public/images/Skills/C#logo.svg'),
     },
 ];
 

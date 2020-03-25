@@ -19,15 +19,19 @@ const Project = (props: IProject) => {
             <S.container>
                 <S.title>{props.name}</S.title>
                 <S.projectDetails>
-                    <S.image image={props.image} />
+                    <picture>
+                        <source/>
+                        <source/>
+                        
+                    <S.image image={props.image} title={`${props.name} Project`} />
+                    </picture>
                     <S.description>{props.description}</S.description>
                 </S.projectDetails>
                 <S.buttonContainer>
-                <S.link href={props.url}>
-                    <S.button>{liveVersion}</S.button>
-                </S.link>
+                    <S.link href={props.url}>
+                        <S.button>{liveVersion}</S.button>
+                    </S.link>
                 </S.buttonContainer>
-                
             </S.container>
         </>
     );

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="455" height="500" version="1.1" viewBox="-26 -20 507 552" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+	<defs>
+		<clipPath id="b">
+			<path d="m435.28 113.28-188.09-108.59c-10.835-6.257-28.567-6.257-39.402 0l-188.09 108.59c-10.836 6.255-19.701 21.612-19.701 34.124v217.18c0.843 14.571 8.286 26.639 19.701 34.123l188.09 108.59c10.835 6.257 28.567 6.257 39.402 0l188.09-108.59c12.248-8.146 19.219-20.408 19.701-34.123v-217.18c-0.44-13.165-8.323-26.443-19.701-34.124z"/>
+		</clipPath>
+
+		<linearGradient id="a" x1="121.09" x2="261.77" y1="55.807" y2="235.87" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#A47EDE" offset="0"/>
+			<stop stop-color="#9866D3" offset="1"/>
+		</linearGradient>
+
+		<linearGradient id="c" x1="314.18" x2="443.46" y1="207.29" y2="372.77" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#3B009B" offset="0"/>
+			<stop stop-color="#390086" offset="1"/>
+		</linearGradient>
+
+		<linearGradient id="d" x1="115.29" x2="252.74" y1="326.16" y2="502.09" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#340084" offset="0"/>
+			<stop stop-color="#290064" offset="1"/>
+		</linearGradient>
+	</defs>
+
+	<g clip-path="url(#b)">
+		<rect x="222.59" y="124.49" width="267.46" height="273.49" fill="url(#c)"/>
+		<polygon points="490.05 407.8 145.84 208.63 -29.911 208.63 -29.911 538.35 490.05 538.35" fill="url(#d)"/>
+		<polygon points="-29.911 405.09 490.05 104.21 490.05 -14.513 -29.911 -14.513" fill="url(#a)"/>
+	</g>
+
+	<path d="m75.83 256c-0.891-148.09 197.46-213.48 283-75.878l-65.635 37.98c-39.622-65.534-138-42.101-141.53 37.897 1.06 73.729 97.754 107.98 141.54 37.893l65.635 37.979c-75.382 130.86-279.2 83.781-283-75.871z" fill="#fff"/>
+
+	<g fill="#fff" aria-label="♯" data-name="♯">
+		<polygon points="326 213 338.5 213 329.96 295.5 317.22 295.5"/>
+		<polygon points="352.78 213 365.28 213 356.74 295.5 344 295.5"/>
+		<rect x="312" y="232.59" width="62.5" height="12.072"/>
+		<rect x="308.5" y="262" width="62.5" height="12.072"/>
+	</g>
+</svg>

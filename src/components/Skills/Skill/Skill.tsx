@@ -10,7 +10,7 @@ const Skill = (props: ISkill) => {
     return (
         <S.container>
             <S.popup>{props.name}</S.popup>
-            <S.skillLogo src={props.image} />
+            <S.skillLogo src={props.image} alt={props.name + ' Skill'}/>
         </S.container>
     );
 };

@@ -98,6 +98,7 @@ const Projects = () => {
                     image={project.image}
                     description={project.description}
                     url={project.url}
+                    
                 />
                
             );

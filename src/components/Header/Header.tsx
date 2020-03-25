@@ -17,7 +17,7 @@ const Header = () => {
                             </S.nameContainer>
                         </S.headerContainer>
                         <S.contact>
-                            <S.link href="mailto:fabianeboli@tutanota.com">
+                            <S.link href="mailto:fabianeboli@tutanota.com" >
                                 fabianeboli@tutanota.com
                             </S.link>
                             <S.link href="https://www.github.com/fabianeboli">
@@ -26,7 +26,7 @@ const Header = () => {
                         </S.contact>
                     </S.showcaseContainer>
                     <S.backgroundContainer>
-                        <S.backgroundImage src={backgroundImage} />
+                        <S.backgroundImage src={backgroundImage} alt='Computer image' />
                     </S.backgroundContainer>
                 </S.headerContainer>
             <ScrollButton />

@@ -6,6 +6,7 @@ export const container = styled.div`
     grid-template-rows: 2vh repeat(2, 1fr);
     justify-items: center;
     align-content: center;
+    padding-bottom: 0.5vh;
 
     box-shadow: ${p => p.theme.cardShadow};
     margin: 10vh 2%;

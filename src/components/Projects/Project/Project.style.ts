@@ -47,7 +47,7 @@ export const button = styled.button`
     }
 `;
 
-export const image = styled.div<{ image: string }>`
+export const image = styled.img<{ image: string }>`
     background-image: url(${p => p.image});
     height: 20vh;
     align-self: stretch;
