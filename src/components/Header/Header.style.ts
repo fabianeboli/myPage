@@ -80,7 +80,7 @@ export const contact = styled.h4`
 `;
 
 export const github = styled(Github)`
-    margin-bottom: 5px;
+    padding-bottom: 0.1vh;
 `;
 
 export const link = styled.a`
@@ -89,6 +89,7 @@ export const link = styled.a`
     text-decoration: none;
     transition: 0.1s linear;
     padding: 0 5px;
+ 
 
     &:hover {
         text-decoration: underline;
