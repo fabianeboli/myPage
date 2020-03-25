@@ -79,7 +79,9 @@ export const contact = styled.h4`
     display: flex;
 `;
 
-export const github = styled(Github)``;
+export const github = styled(Github)`
+    margin-bottom: 5px;
+`;
 
 export const link = styled.a`
     font-family: 'Lato', sans-serif;
