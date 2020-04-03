@@ -73,7 +73,7 @@ const skillsList: ISkill[] = [
     },
     {
         name: 'C#',
-        image: require('../../../public/images/Skills/C#logo.svg'),
+        image: require('../../../public/images/Skills/CsharpLogo.svg'),
     },
 ];
 

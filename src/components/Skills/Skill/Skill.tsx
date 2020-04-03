@@ -10,7 +10,10 @@ const Skill = (props: ISkill) => {
     return (
         <S.container>
             <S.popup>{props.name}</S.popup>
-            <S.skillLogo src={props.image} alt={props.name + ' Skill'}/>
+            <picture>
+                <source srcSet={props.image + '?webp'} type={'image/webp'} />
+                <S.skillLogo src={props.image} alt={props.name + ' Skill'} />
+            </picture>
         </S.container>
     );
 };

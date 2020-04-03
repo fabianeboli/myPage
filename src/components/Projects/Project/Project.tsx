@@ -20,10 +20,8 @@ const Project = (props: IProject) => {
                 <S.title>{props.name}</S.title>
                 <S.projectDetails>
                     <picture>
-                        <source/>
-                        <source/>
-                        
-                    <S.image image={props.image} title={`${props.name} Project`} />
+                        <source srcSet={props.image + '?webp'} type="image/webp" />
+                        <S.image image={props.image} title={`${props.name} Project`} />
                     </picture>
                     <S.description>{props.description}</S.description>
                 </S.projectDetails>

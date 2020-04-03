@@ -1,7 +1,9 @@
 import React from 'react';
 import * as S from './Header.style';
 import ScrollButton from '../ScrollButton/ScrollButton';
-import backgroundImage from '../../../public/images/Header/Workspace_2_SVG.svg';
+// import backgroundImage from '../../../public/images/Header/Workspace_2_SVG.svg';
+const backgroundImage = require('../../../public/images/Header/Workspace_2_SVG.svg');
+
 const Header = () => {
     return (
         <>
@@ -11,13 +13,11 @@ const Header = () => {
                         <S.headerContainer>
                             <S.nameContainer>
                                 <S.name>Fabian Eboli</S.name>
-                                <S.profession>
-                                    Web developer
-                                </S.profession>
+                                <S.profession>Web developer</S.profession>
                             </S.nameContainer>
                         </S.headerContainer>
                         <S.contact>
-                            <S.link href="mailto:fabianeboli@tutanota.com" >
+                            <S.link href="mailto:fabianeboli@tutanota.com">
                                 fabianeboli@tutanota.com
                             </S.link>
                             <S.link href="https://www.github.com/fabianeboli">
@@ -26,11 +26,13 @@ const Header = () => {
                         </S.contact>
                     </S.showcaseContainer>
                     <S.backgroundContainer>
-                        <S.backgroundImage src={backgroundImage} alt='Computer image' />
+                        <picture>
+                            <source srcSet={backgroundImage + '?webp'} type="image/webp" />
+                            <S.backgroundImage src={backgroundImage} alt="Computer image" />
+                        </picture>
                     </S.backgroundContainer>
                 </S.headerContainer>
-            <ScrollButton />
-
+                <ScrollButton />
             </S.container>
         </>
     );

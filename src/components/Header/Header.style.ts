@@ -8,7 +8,6 @@ export const container = styled.div`
     flex-wrap: wrap;
     flex-direction: column;
     color: ${p => p.theme.headline};
-    text-shadow: 2px 2px 1px ${p => p.theme.shadow};
     padding: 3vh 0 10vh 0;
     background-size: cover;
 
