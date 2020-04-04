@@ -2,7 +2,7 @@ import React from 'react';
 import * as S from './Header.style';
 import ScrollButton from '../ScrollButton/ScrollButton';
 // import backgroundImage from '../../../public/images/Header/Workspace_2_SVG.svg';
-const backgroundImage = require('../../../public/images/Header/Workspace_2_SVG.svg');
+const backgroundImage = require('../../../public/images/Header/Workspace_2_SVG.svg?lqip');
 
 const Header = () => {
     return (

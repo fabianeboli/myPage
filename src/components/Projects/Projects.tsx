@@ -101,7 +101,6 @@ const Projects = () => {
 
     const presentProjects = () =>
         ProjectsList.map((project) => {
-            console.log(project.image, project.imageWebp);
             return (
                 <Project
                     key={uuid()}
