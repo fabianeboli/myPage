@@ -155,7 +155,7 @@ export const GlobalStyle = createGlobalStyle`
         scrollbar-color: #0c7d9d #0c7d9d55;
 		margin: 0 auto;
 		overflow-x: hidden;
-		animation: ${fadeIn} 1s ease-in;
+		animation: ${fadeIn} 0.45s ease-in;
 	
 		@media only screen and (min-width: ${p => p.theme.nonMobilePx}) {
         	animation: ${fadeIn} 1s ease-in, ${wave} 25s ease-out infinite;

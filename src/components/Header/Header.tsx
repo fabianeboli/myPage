@@ -27,7 +27,7 @@ const Header = () => {
                     </S.showcaseContainer>
                     <S.backgroundContainer>
                         <picture>
-                            <source srcSet={backgroundImage + '?webp'} type="image/webp" />
+                            <source srcSet={backgroundImage + '?webp?lqip'} type="image/webp" />
                             <S.backgroundImage src={backgroundImage} alt="Computer image" />
                         </picture>
                     </S.backgroundContainer>

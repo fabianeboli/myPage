@@ -11,7 +11,7 @@ const Skill = (props: ISkill) => {
         <S.container>
             <S.popup>{props.name}</S.popup>
             <picture>
-                <source srcSet={props.image + '?webp'} type={'image/webp'} />
+                <source srcSet={props.image + '?webp?lqip'} type={'image/webp'} />
                 <S.skillLogo src={props.image} alt={props.name + ' Skill'} />
             </picture>
         </S.container>
