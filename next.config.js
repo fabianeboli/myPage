@@ -10,9 +10,10 @@ module.exports = withPlugins([
             inlineImageLimit: -1,
             handleImages: ['jpeg', 'png', 'svg', 'webp', 'gif', 'ico'],
             optimizedImagesInDev: true,
+            optimizedImages: true,
             webp: {
                 preset: 'default',
-                quality: 50,
+                quality: 40,
               }
         },
     ],

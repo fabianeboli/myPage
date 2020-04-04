@@ -49,9 +49,11 @@ export const button = styled.button`
 
 export const image = styled.img<{ image: string }>`
     background-image: url(${p => p.image});
+    display: block;
+    object-fit: cover;
     height: 20vh;
-    align-self: stretch;
     width: 100%;
+    align-self: stretch;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

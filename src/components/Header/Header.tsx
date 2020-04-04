@@ -26,10 +26,7 @@ const Header = () => {
                         </S.contact>
                     </S.showcaseContainer>
                     <S.backgroundContainer>
-                        <picture>
-                            <source srcSet={backgroundImage + '?webp'} type="image/webp" />
-                            <S.backgroundImage src={backgroundImage} alt="Computer image" />
-                        </picture>
+                        <S.backgroundImage src={backgroundImage} alt="Computer image" />
                     </S.backgroundContainer>
                 </S.headerContainer>
                 <ScrollButton />

@@ -7,6 +7,7 @@ import { words } from '../../../Language/words';
 export interface IProject {
     name: string;
     image: string;
+    imageWebp: string;
     description?: string;
     url: string;
 }
@@ -20,7 +21,8 @@ const Project = (props: IProject) => {
                 <S.title>{props.name}</S.title>
                 <S.projectDetails>
                     <picture>
-                        <source srcSet={props.image + '?webp'} type="image/webp" />
+                        <source srcSet={props.imageWebp} type="image/webp" />
+                        <source srcSet={props.image} type="image/webp" />
                         <S.image image={props.image} title={`${props.name} Project`} />
                     </picture>
                     <S.description>{props.description}</S.description>
